@@ -1,0 +1,244 @@
+[
+  {
+    "primaryKey": [
+      "DASHBOARD#"
+    ],
+    "sortKey": [
+      "CS#87dcee44-1650-4d22-abcc-25926ab9977a"
+    ],
+    "type": [
+      "dashboard"
+    ], /* Dict Object Type*/
+    "resource": {
+      "format": [
+        "quicksight"
+      ],
+      "content": [
+        "data visualisation"
+      ],
+      "collection": [
+        ""
+      ] /* resource collection */
+    },
+    "status": [
+      "Created"
+    ],
+    "title": [
+      "xxx"
+    ],
+    "about": {
+      "description": {
+        "full": {
+          "cs": [
+            "DashPha"
+          ]
+        },
+        "short": {
+          "cs": [
+            "DashPha"
+          ]
+        }
+      },
+      "titleOptions": {
+        "full": {
+          "cs": [
+            "DashPha"
+          ]
+        },
+        "short": {
+          "cs": [
+            "DashPha"
+          ]
+        }
+      },
+      "owner": [
+        "LukasO"
+      ],
+      "organization": [
+        "VSB"
+      ]
+    },
+    "authorization": {
+      "group": [
+        "dansup",
+        "iprsup"
+      ],
+      "user": [
+        "LukasO"
+      ],
+      "machine": [
+        "ec2-215-254"
+      ]
+    },
+    "publishDefault": [
+      "lab_danse_tech"
+    ],
+    "publish": [
+      "iprpraha_danse_tech",
+      "api_danse_tech"
+    ],
+    "meta": {
+      "Version": [
+        "4"
+      ]
+    },
+    "date": { /* dateTime ISO 8601 UTC zone*/
+      "created": [
+        "2020-06-01T10:40:19.283Z"
+      ],
+      "updated": [
+        "2020-06-01T10:40:19.283Z"
+      ],
+      "validityFrom": [
+        "2020-06-01T10:40:19.283Z"
+      ],
+      "validityTo": [
+        "2020-06-01T10:40:19.283Z"
+      ]
+    },
+    "keyword": [
+      "dashboard",
+      "vsb"
+    ],
+    "license": {
+      "public": false,
+      "license": [
+        "MIT"
+      ]
+    },
+    "languagePrimary": [
+      "en"
+    ],
+    "tag": [
+      {
+        "key": [
+          "value"
+        ]
+      }
+    ],
+    "quicksightMeta": {
+      "dashboardId": [
+        "76663a3f-6cff-42f4-9693-077672684364"
+      ],
+      "arn": [
+        "arn:aws:quicksight:eu-west-1:182059100462:dashboard/76663a3f-6cff-42f4-9693-077672684364"
+      ],
+      "share": [
+        "dansup",
+        "iprsup"
+      ]
+    },
+    "location": [
+      {
+        "type": [
+          "quicksight"
+        ],
+        "account": [
+          "182059100462"
+        ]
+      }
+    ],
+    "attach": {
+      "icon": {
+        "format": [
+          "svg"
+        ],
+        "name": [
+          "cor12a___pha_stc__s__str___nu3_l2g_la2_la3___20191101_20210131___tvi___ico.svg"
+        ],
+        "location": [
+          {
+            "type": [
+              "s3"
+            ],
+            "account": [
+              "182059100462"
+            ],
+            "bucket": [
+              "vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462"
+            ],
+            "key": [
+              "cor12a___pha_stc__s__str___nu3_l2g_la2_la3___20191101_20210131___tvi___ico.svg"
+            ],
+            "keys": [
+              "cor12a___pha_stc__s__str___nu3_l2g_la2_la3___20191101_20210131___tvi___ico.svg"
+            ],
+            "basename": [
+              "template.html"
+            ]
+          },
+          {
+            "type": [
+              "cloudFront"
+            ],
+            "account": [
+              "182059100462"
+            ],
+            "distribution": [
+              "E2VFBGTSXACN6B"
+            ],
+            "key": [
+              "icon/cor12a___pha_stc__s__str___nu3_l2g_la2_la3___20191101_20210131___tvi___ico.svg"
+            ],
+            "keys": [
+              "icon",
+              "cor12a___pha_stc__s__str___nu3_l2g_la2_la3___20191101_20210131___tvi___ico.svg"
+            ],
+            "basename": [
+              "template.html"
+            ]
+          }
+        ]
+      },
+      "infodashboards": [
+        {
+          "compositeKey": [
+            "DOCUMENT#EN#87dcee44-1650-4d22-abcc-25926ab9977a"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "compositeKey": [
+            "DOCUMENT#EN#87dcee44-1650-4d22-abcc-25926ab9977a"
+          ],
+          "type": [
+            "activeUser"
+          ]
+        },
+        {
+          "compositeKey": [
+            "DOCUMENT#EN#87dcee44-1650-4d22-abcc-25926ab9977a"
+          ],
+          "type": [
+            "passiveUser"
+          ]
+        }
+      ]
+    },
+    "nameSpace": [
+      {
+        "type": [
+          "relative"
+        ],
+        "destination": [
+          "labWebApp"
+        ],
+        "value": [
+          "/mobilita"
+        ]
+      },
+      {
+        "type": [
+          "relative"
+        ],
+        "destination": [
+          "atlMob"
+        ],
+        "value": [
+          "/mobilita"
+        ]
+      }
+    ]
+  }
+]

@@ -1,57 +1,70 @@
 [
     {
-        "pk": [
-            "xxx"
+        "primaryKey": [
+            "xxx"/*STATICRESOURCE#*/
         ],
-        "sk": [
+        "sortKey": [
             "xxx"
-        ],
+        ], /*CS#INTERNAL#EDUCATE#87dcee44-1650-4d22-abcc-25926ab9977a ... language#authoriseAccount#objectMotivation#hid*/
         "type": [
             "xxx"
-        ],
-        "title": [
-            "xxx" /*part of core info*/
-        ],
-        "location": [/*need to define location for formats*/
-            {
-                "type": ["s3"],
-                "account": ["182059100462"],
-                "bucket": ["vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462"],
-                "key": ["documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3/template___internal___3b80283b-fc27-4489-8b54-8c87c6136997/rdmformats__html_clean__toc/template.html"],
-                "key1": ["documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3"],
-                "key2": ["template___internal___3b80283b-fc27-4489-8b54-8c87c6136997"],
-                "key3": ["rdmformats__html_clean__toc"],
-                "basename": ["template.html"] /*see namespace*/
-            }
-        ],
-        "resource": { /*?*/
+        ], /*Dict Object Type ... StaticResource*/
+        "resource": {
             "format": [
-                "quicksight"
+                "xxx"/*html, quicksight*/
             ],
             "content": [
                 "data visualisation"
             ],
-            "group": [ /*duplicate to authorisation*/
-                "xxx"
-            ]
+            "collection": {
+                "hidCollection": [
+                    "xxx" /*hid*/
+                ],
+                "descriptionCollection": [
+                    "xxx" /*what the collection is about*/
+                ]                
+            } /*if stand alone leaveout. If with other resources, give a collection id and description. Collection is different formats as well as the same formats with different hid that are supposed to be presented together. Etc. activeUser, passiveUser, infoDashboard html resources on danse portal. Collection members to be gathered with hidCollection*/
         },
+        "title": [
+            "xxx"
+        ],
+        "location": [ /*need to define location for formats*/
+            {
+                "type": [
+                    "s3"
+                ],
+                "account": [
+                    "182059100462"
+                ],
+                "bucket": [
+                    "vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462"
+                ],
+                "key": [
+                    "documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3/template___internal___3b80283b-fc27-4489-8b54-8c87c6136997/rdmformats__html_clean__toc/template.html"
+                ],
+                "keys": [
+                    "documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3",
+                    "template___internal___3b80283b-fc27-4489-8b54-8c87c6136997",
+                    "rdmformats__html_clean__toc"
+                ],
+                "basename": [
+                    "template.html"
+                ] /*see namespace*/
+            }
+        ],
         "languagePrimary": [
             "en"
+        ],
+        "objectMotivattion": [
+            "educate"
         ],
         "nameSpace": [
             "xxx" /*this will become '/en/documentation/internal/template.html' to be published in [domain(s)]*/,
             "xxx" /*namespace for formt versions by extension etc .docx*/
         ],
-        "publishDefault": { /*consider that originally we publish document and authorisation can be added, changed later*/
-            "authorization": {/*do not forget we want to authorise formats .docx, .html for groups, how this is handled?*/
-                "groupDefault": [ /*why this level*/
-                    "dansup"
-                ]
-            },
-            "domainDefault": [ /*changed from publish*/
-                "lab_danse_tech"
-            ]
-        },
+        "publishDefault": [
+            "lab_danse_tech"
+        ],
         "about": {
             "titleOptions": {
                 "full": {
@@ -105,6 +118,33 @@
             ],
             "organization": [
                 "VSB"
+            ],
+            "license": {
+                "public": false,
+                "license": [
+                    "MIT"
+                ]
+            }
+        },
+        "tag": [
+            {
+                "key": [
+                    "value"
+                ]
+            }
+        ],
+        "date": { /* dateTime ISO 8601 UTC zone*/
+            "created": [
+                "2020-06-01T10:40:19.283Z"
+            ],
+            "updated": [
+                "2020-06-01T10:40:19.283Z"
+            ],
+            "validitFrom": [
+                "2020-06-01T10:40:19.283Z"
+            ],
+            "validitTo": [
+                "2020-06-01T10:40:19.283Z"
             ]
         },
         "parametersSettings": {
@@ -194,6 +234,24 @@
                         }
                     }
                 },
+                "markdown__html4tags__toc": {
+                    "isRequested": [
+                        "yes"
+                    ],
+                    "run": {
+                        "A": {
+                            "hasHid": [
+                                "18ef4e43-5072-4748-89b2-a99615dc3164"
+                            ],
+                            "authoriseAccount": [
+                                "intite"
+                            ],
+                            "language": [
+                                "cs"
+                            ]
+                        }
+                    }
+                },
                 "rdmformats__material": {
                     "isRequested": [
                         "no"
@@ -218,7 +276,7 @@
                     "isRequested": [
                         "no"
                     ]
-                }
+                }                
             }
         }
     }
