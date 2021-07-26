@@ -1,0 +1,225 @@
+[
+    {
+        "pk": [
+            "xxx"
+        ],
+        "sk": [
+            "xxx"
+        ],
+        "type": [
+            "xxx"
+        ],
+        "title": [
+            "xxx" /*part of core info*/
+        ],
+        "location": [/*need to define location for formats*/
+            {
+                "type": ["s3"],
+                "account": ["182059100462"],
+                "bucket": ["vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462"],
+                "key": ["documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3/template___internal___3b80283b-fc27-4489-8b54-8c87c6136997/rdmformats__html_clean__toc/template.html"],
+                "key1": ["documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3"],
+                "key2": ["template___internal___3b80283b-fc27-4489-8b54-8c87c6136997"],
+                "key3": ["rdmformats__html_clean__toc"],
+                "basename": ["template.html"] /*see namespace*/
+            }
+        ],
+        "resource": { /*?*/
+            "format": [
+                "quicksight"
+            ],
+            "content": [
+                "data visualisation"
+            ],
+            "group": [ /*duplicate to authorisation*/
+                "xxx"
+            ]
+        },
+        "languagePrimary": [
+            "en"
+        ],
+        "nameSpace": [
+            "xxx" /*this will become '/en/documentation/internal/template.html' to be published in [domain(s)]*/,
+            "xxx" /*namespace for formt versions by extension etc .docx*/
+        ],
+        "publishDefault": { /*consider that originally we publish document and authorisation can be added, changed later*/
+            "authorization": {/*do not forget we want to authorise formats .docx, .html for groups, how this is handled?*/
+                "groupDefault": [ /*why this level*/
+                    "dansup"
+                ]
+            },
+            "domainDefault": [ /*changed from publish*/
+                "lab_danse_tech"
+            ]
+        },
+        "about": {
+            "titleOptions": {
+                "full": {
+                    "cs": [
+                        "Šablona generování stránek"
+                    ],
+                    "en": [
+                        "Template for pages rendering"
+                    ]
+                },
+                "short": {
+                    "cs": [
+                        "sablona"
+                    ],
+                    "en": [
+                        "template"
+                    ]
+                }
+            },
+            "description": {
+                "full": {
+                    "cs": [
+                        "Toto je popis výstupu šablony, nikoliv kódu. Na základě vstupů `render.json` a podpůrných souborů vygeneruje objekt typu stránka."
+                    ],
+                    "en": [
+                        "This is a description of the template output, not the code. It generates a page object based on `render.json` inputs and supporting files."
+                    ]
+                },
+                "short": {
+                    "cs": [
+                        "Popis výstupu šablony. `render.json`"
+                    ],
+                    "en": [
+                        "Description of the template output. `render.json`"
+                    ]
+                }
+            },
+            "keyword": {
+                "cs": [
+                    "a"
+                ],
+                "en": [
+                    "b"
+                ]
+            },
+            "owner": [
+                "HylmarJ"
+            ],
+            "creator": [
+                "Jiří Hylmar"
+            ],
+            "organization": [
+                "VSB"
+            ]
+        },
+        "parametersSettings": {
+            "favicon": [
+                "018-origam"
+            ],
+            "behaviour": {
+                "forceResourceUpdate": [
+                    0
+                ],
+                "synchroniseS3": [
+                    0
+                ],
+                "unitTest": [
+                    0
+                ]
+            },
+            "hst": [
+                "/h/dan-alf/big/"
+            ],
+            "bucket": [
+                "vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462"
+            ],
+            "key1": [
+                "5260f665-fca8-4c0d-9e26-e93cadd25ab9__documentation"
+            ],
+            "runner": [
+                "/ws/d4m-sck-manpro/chapter_100__methods.Rmd"
+            ],
+            "scratchRender": [
+                "/ws/d4m-sck-manpro_scratch/render/"
+            ],
+            "scratchRenderTest": [
+                "/ws/d4m-sck-manpro_scratch/renderTest/"
+            ],
+            "scratchResources": [
+                "/scratch/rmarkdown/resources/"
+            ],
+            "awsProfile": [
+                "HylmarJ"
+            ],
+            "subtitlePart1": { /*subtitle may include additional info, but always derived from axisting, no free text*/
+                "intite": {
+                    "cs": [
+                        "Interní zdroj"
+                    ],
+                    "en": [
+                        "Internal resource"
+                    ]
+                },
+                "extite": {
+                    "cs": [
+                        "Publikováno"
+                    ],
+                    "en": [
+                        "Published"
+                    ]
+                }
+            },
+            "versions": {
+                "rdmformats__html_clean__toc": {
+                    "isRequested": [
+                        "yes"
+                    ],
+                    "run": {
+                        "A": {
+                            "hasHid": [
+                                "09b39935-22b0-4482-8f13-5d1c08c6d2ed"
+                            ],
+                            "authoriseAccount": [
+                                "extite"
+                            ],
+                            "language": [
+                                "cs"
+                            ]
+                        },
+                        "B": {
+                            "hasHid": [
+                                "3b80283b-fc27-4489-8b54-8c87c6136997"
+                            ],
+                            "authoriseAccount": [
+                                "inttite"
+                            ],
+                            "language": [
+                                "cs"
+                            ]
+                        }
+                    }
+                },
+                "rdmformats__material": {
+                    "isRequested": [
+                        "no"
+                    ]
+                },
+                "rmarkdown__html_document__toc_float__theme_united": {
+                    "isRequested": [
+                        "no"
+                    ]
+                },
+                "rmarkdown__html_document__toc__theme_united": {
+                    "isRequested": [
+                        "no"
+                    ]
+                },
+                "rmarkdown__pdf_document__toc": {
+                    "isRequested": [
+                        "no"
+                    ]
+                },
+                "rmarkdown__word_document__toc": {
+                    "isRequested": [
+                        "no"
+                    ]
+                }
+            }
+        }
+    }
+]
