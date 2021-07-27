@@ -61,9 +61,9 @@
         "languagePrimary": [
             "en"
         ],
-        "objectMotivattion": [
+        "objectMotivation": [
             "educate"
-        ],
+        ], /*controlled vocabulary namespace objectMotivation*/
         "nameSpace": [
             "xxx" /*this will become '/en/documentation/internal/template.html' to be published in [domain(s)]*/,
             "xxx" /*namespace for formt versions by extension etc .docx*/
