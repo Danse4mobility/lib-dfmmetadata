@@ -6,6 +6,9 @@
         "sortKey": [
             "xxx"
         ], /*CS#INTERNAL#EDUCATE#87dcee44-1650-4d22-abcc-25926ab9977a ... language#authoriseAccount#objectMotivation#hid*/
+        "hashId": [
+            "xxx"
+        ], /*hid*/
         "type": [
             "xxx"
         ], /*Dict Object Type ... StaticResource*/
@@ -17,8 +20,11 @@
                 "data visualisation"
             ],
             "collection": {
-                "hidCollection": [
+                "hashIdCollection": [
                     "xxx" /*hid*/
+                ],
+                "sortKeyCollection": [
+                    "xxx" /*COLLECTION#87dcee44-1650-4d22-abcc-25926ab9977a*/
                 ],
                 "descriptionCollection": [
                     "xxx" /*what the collection is about*/
