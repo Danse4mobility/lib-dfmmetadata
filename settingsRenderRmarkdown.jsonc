@@ -9,12 +9,15 @@
         "hashId": [
             "xxx"
         ], /*hid*/
-        "type": [
+        "typeObject": [
             "xxx"
-        ], /*Dict Object Type ... StaticResource*/
+        ], /*Type object vocabulary*/
         "resource": {
-            "format": [
-                "xxx"/*html, quicksight*/
+            "typeEnvironmentService": [
+                "xxx"/*quicksight*/
+            ],
+            "typeObjectDeliveryFormats": [
+                "xxx"/*widgetHtmlGraphMermaid*/
             ],
             "content": [
                 "data visualisation"
@@ -29,14 +32,14 @@
                 "descriptionCollection": [
                     "xxx" /*what the collection is about*/
                 ]                
-            } /*if stand alone leaveout. If with other resources, give a collection id and description. Collection is different formats as well as the same formats with different hid that are supposed to be presented together. Etc. activeUser, passiveUser, infoDashboard html resources on danse portal. Collection members to be gathered with hidCollection*/
+            } /*if stand alone leaveout. If with other resources, give a collection id and description. Collection is different typeObjectDeliveryFormats as well as the same formats with different hid that are supposed to be presented together. Etc. activeUser, passiveUser, infoDashboard html resources on danse portal. Collection members to be gathered with hidCollection*/
         },
         "title": [
             "xxx"
         ],
         "location": [ /*need to define location for formats*/
             {
-                "type": [
+                "typeEnvironmentService": [
                     "s3"
                 ],
                 "account": [
@@ -122,8 +125,8 @@
             "creator": [
                 "Jiří Hylmar"
             ],
-            "organization": [
-                "VSB"
+            "rightsholder": [
+                "vsb"
             ],
             "license": {
                 "public": false,
