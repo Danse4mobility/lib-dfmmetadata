@@ -2,11 +2,14 @@
   {
     "primaryKey": ["DASHBOARD#"],
     "sortKey": ["EN#87dcee44-1650-4d22-abcc-25926ab9977a"],
-    "type": ["dashboard"], /* Dict Object Type*/
+    "typeObject": ["dashboard"],
     "resource": {
-      "format": [
-          "quicksight"/*html, quicksight*/
-      ],
+      "typeEnvironmentService": [
+        "xxx"
+    ],
+    "typeObjectDeliveryFormats": [
+        "xxx"
+    ],
       "content": [
           "data visualisation"
       ],
@@ -15,9 +18,9 @@
               "COLLECTION#87dcee44-1650-4d22-abcc-25926ab9977a" /*hid*/
           ],
           "descriptionCollection": [
-              "xxx" /*what the collection is about*/
+              "xxx"
           ]                
-      } /*if stand alone leaveout. If with other resources, give a collection id and description. Collection is different formats as well as the same formats with different hid that are supposed to be presented together. Etc. activeUser, passiveUser, infoDashboard html resources on danse portal. Collection members to be gathered with hidCollection*/
+      }
     },
     "title": ["xxx"],
     "about": {
@@ -39,7 +42,7 @@
       },
       "creator": ["Lukas Orcik"],
       "owner": ["LukasO"],
-      "organization": ["VSB"]
+      "rightsholder": ["VSB"]
     },
     "authorization": {
       "group": ["dansup", "iprsup"],
@@ -77,7 +80,7 @@
     },
     "location": [
       {
-        "type": ["quicksight"],
+        "typeEnvironmentservice": ["quicksight"],
         "account": ["182059100462"]
       }
     ],
@@ -89,7 +92,7 @@
         ],
         "location": [
           {
-            "type": ["s3"],
+            "typeEnvironmentService": ["s3"],
             "account": ["182059100462"],
             "bucket": ["vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462"],
             "key": [
@@ -101,7 +104,7 @@
             "basename": ["template.html"]
           },
           {
-            "type": ["cloudFront"],
+            "typeObject": ["cloudFront"],
             "account": ["182059100462"],
             "distribution": ["E2VFBGTSXACN6B"],
             "key": [
