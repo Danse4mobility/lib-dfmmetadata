@@ -14,8 +14,15 @@ lib[rary]-[]d[anse]f[or]m[obility]metadata
 9. "lock" tag object for rewrite. If metadata exist for object, force edit, merge, rather than rewrite
 13. library / extension vscode, implement scheme to .jsonc validator
 
+### Render simple
+
+To preview .md file `pandoc` can be used.
+
+example: `pandoc chapter_01__original.Rmd -t html -o chapter_01__original.html`
 
 ### Consider
+
+https://github.com/Danse4mobility/d4m-sck-manpro/blob/master/chapter_90__documentation.Rmd
 
 https://github.com/Danse4mobility/lib-dfmname
 
