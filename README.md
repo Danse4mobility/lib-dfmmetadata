@@ -8,9 +8,9 @@ lib[rary]-[]d[anse]f[or]m[obility]metadata
 
 ### TODO
 
-1. finish structure
-2. replicate to usecases (objects)
-3. shema json
+1. consider other runner
+2. implement scheme to .jsonc validator
+3. replicate to usecases (objects)
 4. library / extension vscode
 
 ### Consider
@@ -41,10 +41,6 @@ https://code.visualstudio.com/docs/languages/json
 **Updates and locations**
 
 Stack is updated locally, `vscode` prefered.
-
-**view me local**
-
-`\\wsl$\Ubuntu\home\hylmarj\ws\lib-dfmmetadata\README.md`
 
 **render me**
 
@@ -290,13 +286,16 @@ metadata.attach.path.based(
 ```
 
 **Output:**
+
 - a json file is stored to the same location as the media item
 
 **Output file example**
 
 - Fully Filled [here](https://github.com/Danse4mobility/lib-dfmmedia/blob/main/example_files/user_cell_move_qgis_plugin___graph_covid_in_long_time_full___analyse___itemCreation___vsb___ccByNcNd___staticReport.json) 
-  - all parameters have been provided -> everything is filled
+		- all parameters have been provided -> everything is filled
+
 - Only parsed name (only necessary input parameters given) [here](https://github.com/Danse4mobility/lib-dfmmedia/blob/main/example_files/user_cell_move_qgis_plugin___graph_covid_in_long_time_not_full___analyse___itemCreation___vsb___ccByNcNd___staticReport.json)
-  - only the item path was provided -> only parsed parameters are filled
+		- only the item path was provided -> only parsed parameters are filled
+
 - Bad naming (item not named properly) [here](https://github.com/Danse4mobility/lib-dfmmedia/blob/main/example_files/user_cell_move_qgis_plugin__graph_covid_in_long_time_bad_naming___analyse___itemCreation___vsb___ccByNcNd___staticReport.json)
-  - name that does not following nameing rules was provided -> everything except for parsed parameters was filled
+		- name that does not follow naming rules was provided -> everything except for parsed parameters was filled
