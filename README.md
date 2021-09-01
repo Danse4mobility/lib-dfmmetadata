@@ -8,10 +8,12 @@ lib[rary]-[]d[anse]f[or]m[obility]metadata
 
 ### TODO
 
-1. consider other runner
-2. implement scheme to .jsonc validator
-3. replicate to usecases (objects)
-4. library / extension vscode
+1. continue with dynamo db cataloque item upload, boto3
+5. replicate to usecases (objects)
+7. sync to s3 with **basic policy attachment**
+9. "lock" tag object for rewrite. If metadata exist for object, force edit, merge, rather than rewrite
+13. library / extension vscode, implement scheme to .jsonc validator
+
 
 ### Consider
 
