@@ -41,8 +41,6 @@ object in danse name space.
 > Structures are pasive, no output
 > Verification of valid metadata
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-
 ![how_to_create_media](https://github.com/Danse4mobility/lib-dfmmetadata/blob/master/attachments/lib_dfmmedia___how_to_create_media___help___itemCreation___vsb___by_nc_nd___StaticResource.PNG?raw=true)
 
 https://github.com/Danse4mobility/lib-dfmmetadata/blob/master/attachments/lib_dfmmedia___how_to_create_media___help___itemCreation___vsb___by_nc_nd___StaticResource.PNG
