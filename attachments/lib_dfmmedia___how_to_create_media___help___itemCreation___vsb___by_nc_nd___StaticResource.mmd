@@ -1,0 +1,14 @@
+graph TD
+
+A[correctly named media exists <br> created by lib-dfmmedia <br> with support of lib-dfmnames helper <br> or another runner]
+C[metadata not parsed from the name exist and <br> legend if any exists <br> edit in .json, not within R code]
+D[run path based]
+E[store to s3]
+F[dynamo cataloque entry]
+G[media item use]
+
+A --> D
+C --> |control by dfmnames function| D
+D --> | transfer to s3| E
+E --> | meta to dynamo| F
+E --> | source from s3 <br> with metadata file| G
