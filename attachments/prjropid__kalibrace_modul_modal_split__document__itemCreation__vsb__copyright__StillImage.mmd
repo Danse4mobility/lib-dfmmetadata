@@ -1,0 +1,24 @@
+erDiagram
+    Kalibracni_modul_modal_split ||--|| Casova_prostorova_transformace : vstup
+    Datova_sada_modal_split_vrcholy ||--|| Kalibracni_modul_modal_split : vystup
+    Datova_sada_modal_split_hrany ||--|| Kalibracni_modul_modal_split : vystup
+    Datove_sady_uzlovy_hranovy_model ||--|| Datova_sada_modal_split_vrcholy : spojit
+    Datove_sady_uzlovy_hranovy_model ||--|| Datova_sada_modal_split_hrany : spojit
+    Datova_sada_modal_split_vrcholy {
+        atribut_klic casDen
+        atribut_klic prostorovyElement
+        atribut_klic prostorovyElementCiselnik
+        atribut_hodnota nabidkaSmerLinkyZeStanice
+        atribut_hodnota nabidkaSmerLinkyDoStanice
+        atribut_hodnota poptavkaSmerLinkyZeStanice
+        atribut_hodnota poptavkaSmerLinkyDoStanice
+    }
+    Datova_sada_modal_split_hrany {
+        atribut_klic casDen
+        atribut_klic smer
+        atribut_klic prostorovyElement
+        atribut_klic prostorovyElementCiselnik
+        atribut_hodnota poptavkaSmerLinkyMeziStanicemi
+        atribut_hodnota nabidkaSmerLinkyMeziStanicemi
+        atribut_hodnota provozSmerLinkyMeziStanicemi
+    }

@@ -20,6 +20,10 @@ To preview .md file `pandoc` can be used.
 
 example: `pandoc chapter_01__original.Rmd -t html -o chapter_01__original.html`
 
+To generate mermaid, https://mermaid-js.github.io/mermaid-live-editor/
+
+keep .mmd or .md source, generate .png, .svg version.
+
 ### Consider
 
 https://github.com/Danse4mobility/d4m-sck-manpro/blob/master/chapter_90__documentation.Rmd
