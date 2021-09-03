@@ -135,122 +135,119 @@ user_cell_move_qgis_plugin___case_vector_long_distance_in_short_time___analyse__
 </tbody>
 </table>
 
-## Functions (as of 2021-09-01)
+## List of functions
 
 1) metadata.attach.path.based
 
-# 1) metadata.attach.path.based (last update 2021-08-30)
-This function generates a json file of item metadata given an item path where it is stored. Other input parameters are parameters describing the item (written in the output json file). 
+## 1) metadata.attach.path.based (last update 2021-09-03)
+This function generates a json file of item metadata. 
 
-#### Important features
-- Function throws error if the item at the given path does not exist.
-- Value of a parameter if not provided is "xxx"
-- Function outputs a json without parsed parameters (those in the table above) if the item at the given path exists but is not named according to the naming rules
+- Function throws an error if the item at the given path does not exist (ERROR: FILE DOES NOT EXIST).
+- TBA: Function throws an error if the item is not named according to the rules above (ERROR: FILE NOT NAMED PROPERLY).
+- TBA: Function looks for a json file that carries legend of the item. If found the legend json file is merged to the output metadata json file.
+	- Example of a legend json file created by a function from lib-dfmmedia is - [here]()
+	- Proper name of the legend json file required - example: The media item is named mediaitem.png. The function will look for a json file named mediaitem___legend.json
 
-**Input parameters are:** 
+### Input parameters:
 
 EACH PARAMETER EXCEPT FOR item_path CAN BE OMITTED!
 
+Default value for an omittable parameter is "xxx"
+
+If not stated differently, following parameters are string
+
 - item_path          
-  - path where the item is stored - string
+  - path where the item is stored
 - item_primaryKey                     
-  - primary key identificator- string
+  - primary key identificator
 - item_sortKey                     
-  - sort key identificator- string
+  - sort key identificator
 - item_hashId
-  - hashID identificator- string
+  - hashID identificator
 - item_typeEnvironmentService
-  - parameter of resource section - string
+  - parameter of resource section
 - item_typeObjectDeliveryFormats
-  - parameter of resource section - string
+  - parameter of resource section
 - item_content
-  - parameter of resource section - string
+  - parameter of resource section
 - item_hashIdCollection
-  - parameter of resource section - hashID identificator of the collection - string
+  - parameter of resource section - hashID identificator of the collection
 - item_SortKeyCollection
-  - parameter of resource section - sort key of the collection - string
+  - parameter of resource section - sort key of the collection
 - item_descriptionCollection
-  - parameter of resource section - description of the collection - string
+  - parameter of resource section - description of the collection
 - item_location_typeEnvironmentService
-  - parameter of location section - type of storage - string
+  - parameter of location section - type of storage
 - item_location_account
-  - parameter of location section - string
+  - parameter of location section
 - item_location_bucket
-  - parameter of location section - string
+  - parameter of location section
 - item_location_key
-  - parameter of location section - parsed location key- string
+  - parameter of location section
 - item_languagePrimary
-  - language of the item - string
+  - language of the item
 - item_nameSpace_type
-  - string
+  - parameter of namespace section
 - item_nameSpace_destination
-  - string
+  - parameter of namespace section
 - item_nameSpace_value
-  - string
+  - parameter of namespace section
 - item_publishDefault
-  - string 
+	- TBA  
 - item_titleOptions_full_cs
-  - parameter of about section - title in cz - string 
+  - parameter of about section - title in cz
 - item_titleOptions_full_en
-  - parameter of about section - title in en - string 
+  - parameter of about section - title in en
 - item_titleOptions_short_cs
-  - parameter of about section - short title in cz - string 
+  - parameter of about section - short title in cz
 - item_titleOptions_short_en
-  - parameter of about section - short title in en - string 
+  - parameter of about section - short title in en
 - item_description_full_cs
-  - parameter of about section - description in cz - string 
+  - parameter of about section - description in cz
 - item_description_full_en
-  - parameter of about section - description in en - string 
+  - parameter of about section - description in en
 - item_description_short_cs
-  - parameter of about section - short description in cz - string            
+  - parameter of about section - short description in cz      
 - item_description_short_en
-  - parameter of about section - short description in en - string 
+  - parameter of about section - short description in en
 - item_organisation
-  - parameter of about section - organisation that created the item - string 
+  - parameter of about section - organisation that created the item
 - item_owner
-  - parameter of about section - owner of the item - string 
+  - parameter of about section - owner of the item
 - item_creator
-  - parameter of about section - creator of the item - string 
+  - parameter of about section - creator of the item
 - item_keyword_cs
   - parameter of about section - keywords in cz - vector
 - item_keyword_en
   - parameter of about section - keywords in en - vector
 - item_license_public
-  - parameter of about section - is the item public? - string
+  - parameter of about section - is the item public? - bool
 - item_date_validFrom
-  - parameter of date section - from when the item is valid - string 
+  - parameter of date section - from when the item is valid
 - item_date_validTill
-  - parameter of date section - until when the item is valid - string 
+  - parameter of date section - until when the item is valid
 - item_tag
   - tags - list 
-- item_legend
-  - list of the structure of information about the item - e.g. names of axes, statistical values etc. - output of the functions 3 - 6
 
-**Dataframes and lists used in the example below**
-- list_tag
+### EXAMPLE of use
+
 ```
 list_tag = list()
   list_tag["key1"] = "value1"
   list_tag["key2"] = "value2"
 ```
-- list_legend.ts
-```
-list_legend = list()
-  list_legend["X"] = "X"
-  list_legend["Y"] = "Y"
-```
-
-**EXAMPLE of use:**
 
 ```text
 metadata.attach.path.based(
   item_path = "~/ws/lib-dfmmedia_scratch/metadata/user_cell_move_qgis_plugin___graph_covid_in_long_time_full___analyse___itemCreation___vsb___ccByNcNd___staticReport.png",
 
   item_primaryKey = "STATICRESOURCE#",
+  
   item_sortKey = "CS#INTERNAL#EDUCATE#87dcee44-1650-4d22-abcc-25926ab9977a ... languagePrimary#authoriseAccount#objectMotivation#hashId",
+  
   item_hashId = "HASH#d8dca795-e22a-4efc-b4ff-7eda96fcdb7b",
 
-  #item_resource
+  #resource
   item_typeEnvironmentService = "type environment service",
   item_typeObjectDeliveryFormats = "widgetHtmlGraphDygraph",
   item_typeObjectDeliveryFormatsFlavours = "markdown__html4tags__toc",
@@ -259,7 +256,7 @@ metadata.attach.path.based(
   item_SortKeyCollection = "SKCOLLECTION#d8dca795-e22a-4efc-b4ff-7eda96fcdb7b",
   item_descriptionCollection="what the collection is about",
 
-  #item_location
+  #location
   item_location_typeEnvironmentService = "s3",
   item_location_account = "182059100462",
   item_location_bucket = "vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462",
@@ -267,15 +264,14 @@ metadata.attach.path.based(
   
   item_languagePrimary = "en",
   
-  #item_nameSpace = list_namespace,
-  
+  #namespace  
   item_nameSpace_type = "relative",
   item_nameSpace_destination = "atlMob", 
   item_nameSpace_value = "/mobilita",
   
   item_publishDefault = "lab_danse_tech",
 
-  #item_about
+  #about
   item_titleOptions_full_cs = "Šablona generování stránek",
   item_titleOptions_full_en = "Template for pages rendering",
   item_titleOptions_short_cs = "sablona",
@@ -296,9 +292,7 @@ metadata.attach.path.based(
 
   #date
   item_date_validFrom = "2021-02-15T10:40:19.283Z",
-  item_date_validTill = "2022-02-15T10:40:19.283Z",
-
-  # item_legend = list_legend.ts
+  item_date_validTill = "2022-02-15T10:40:19.283Z"
 )
 ```
 
@@ -307,12 +301,13 @@ metadata.attach.path.based(
 - a json file is stored to the same location as the media item
 
 **Output file example**
+TBA: This example shows the output json file in case everything was provided and a legend json file was found and thus is included - [here]() 
 
-- Fully Filled [here](https://github.com/Danse4mobility/lib-dfmmedia/blob/main/example_files/user_cell_move_qgis_plugin___graph_covid_in_long_time_full___analyse___itemCreation___vsb___ccByNcNd___staticReport.json) 
-		- all parameters have been provided -> everything is filled
+**Other possible outputs**
 
-- Only parsed name (only necessary input parameters given) [here](https://github.com/Danse4mobility/lib-dfmmedia/blob/main/example_files/user_cell_move_qgis_plugin___graph_covid_in_long_time_not_full___analyse___itemCreation___vsb___ccByNcNd___staticReport.json)
-		- only the item path was provided -> only parsed parameters are filled
+TBA: This example shows the output json file in case a legend json file was not found thus is not included - [here]()
 
-- Bad naming (item not named properly) [here](https://github.com/Danse4mobility/lib-dfmmedia/blob/main/example_files/user_cell_move_qgis_plugin__graph_covid_in_long_time_bad_naming___analyse___itemCreation___vsb___ccByNcNd___staticReport.json)
-		- name that does not follow naming rules was provided -> everything except for parsed parameters was filled
+TBA: This example shows the output json file in case only item_path was provided - [here]()
+
+
+
