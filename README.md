@@ -1,6 +1,3 @@
-#'rstudioapi::getSourceEditorContext()$path
-#'whoami="~/ws/lib-dfmmetadata/README.md"
-#'owner="orcikl"
 
 ## lib-dfmmetadata
 
@@ -13,16 +10,6 @@ lib[rary]-[]d[anse]f[or]m[obility]metadata
 7. sync to s3 with **basic policy attachment**
 9. "lock" tag object for rewrite. If metadata exist for object, force edit, merge, rather than rewrite
 13. library / extension vscode, implement scheme to .jsonc validator
-
-### Render simple
-
-To preview .md file `pandoc` can be used.
-
-example: `pandoc chapter_01__original.Rmd -t html -o chapter_01__original.html`
-
-To generate mermaid, https://mermaid-js.github.io/mermaid-live-editor/
-
-keep .mmd or .md source, generate .png, .svg version.
 
 ### Consider
 
@@ -53,6 +40,8 @@ https://github.com/Danse4mobility/lib-dfmmetadata/blob/master/attachments/lib_df
 
 https://code.visualstudio.com/docs/languages/json
 
+replace comment regex `\/\*.*\*\/`
+
 ## Manipulate me
 
 **Updates and locations**
@@ -61,7 +50,15 @@ Stack is updated locally, `vscode` prefered.
 
 **render me**
 
+Recommended methods to preview .md file 
+
 `R -e "rmarkdown::render('$HOME/ws/lib-dfmmetadata/README.md', output_file = '$HOME/ws/lib-dfmmetadata/README.html')"`
+
+`pandoc chapter_01__original.Rmd -t html -o chapter_01__original.html`
+
+To generate mermaid, https://mermaid-js.github.io/mermaid-live-editor/
+
+keep .mmd or .md source, generate .png, .svg version.
 
 **edit me**
 

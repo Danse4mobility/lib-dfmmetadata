@@ -1,0 +1,189 @@
+{
+    "metadataGeneral":{
+        "primaryKey": [
+            "xxx"
+        ],
+        "sortKey": [
+            "xxx"
+        ],
+        "hashId": [
+            "xxx"
+        ],
+        "typeObject": [
+            "xxx"
+        ],
+        "runner": [
+            "xxx"
+        ],
+        "resource": {
+            "typeEnvironmentService": [
+                "xxx"
+            ],
+            "typeObjectDeliveryFormats": [
+                "xxx"
+            ],
+            "typeObjectDeliveryFormatsFlavours": [
+                "xxx"
+            ],
+            "content": [
+                "xxx"
+            ],
+            "collection": {
+                "hashIdCollection": [
+                    "xxx"
+                ],
+                "sortKeyCollection": [
+                    "xxx"
+                ],
+                "descriptionCollection": [
+                    "xxx"
+                ]
+            }
+        },
+        "title": [
+            "xxx"
+        ],
+        "titleStandard": [
+            "xxx"
+        ],
+        "subtitle": [
+            "xxx"
+        ],
+        "location": [
+            {
+                "typeEnvironmentService": [
+                    "xxx"
+                ],
+                "account": [
+                    "xxx"
+                ],
+                "bucket": [
+                    "xxx"
+                ],
+                "key": [
+                    "xxx"
+                ],
+                "keys": [
+                    "xxx",
+                    "xxx",
+                    "xxx"
+                ],
+                "basename": [
+                    "xxx"
+                ]
+            }
+        ],
+        "languagePrimary": [
+            "xxx"
+        ],
+        "objectMotivation": [
+            "xxx"
+        ],
+        "nameSpace": [
+            {
+                "type": [
+                    "xxx"
+                ],
+                "destination": [
+                    "xxx"
+                ],
+                "value": [
+                    "xxx"
+                ]
+            }
+        ],
+        "publishDefault": [
+            "xxx"
+        ],
+        "about": {
+            "titleOptions": {
+                "full": {
+                    "cs": [
+                        "xxx"
+                    ],
+                    "en": [
+                        "xxx"
+                    ]
+                },
+                "short": {
+                    "cs": [
+                        "xxx"
+                    ],
+                    "en": [
+                        "xxx"
+                    ]
+                }
+            },
+            "description": {
+                "full": {
+                    "cs": [
+                        "xxx"
+                    ],
+                    "en": [
+                        "xxx"
+                    ]
+                },
+                "short": {
+                    "cs": [
+                        "xxx"
+                    ],
+                    "en": [
+                        "xxx"
+                    ]
+                }
+            },
+            "keyword": {
+                "cs": [
+                    "xxx"
+                ],
+                "en": [
+                    "xxx"
+                ]
+            },
+            "owner": [
+                "xxx"
+            ],
+            "creator": [
+                "xxx"
+            ],
+            "rightsholder": [
+                "xxx"
+            ],
+            "license": {
+                "public": [
+                    false
+                ],
+                "license": [
+                    "xxx"
+                ],
+                "accessRights": [
+                    "xxx"
+                ]
+            },
+            "accrualMethod": [
+                "xxx"
+            ]
+        },
+        "tag": [
+            {
+                "key": [
+                    "xxx"
+                ]
+            }
+        ],
+        "date": {
+            "created": [
+                "xxx"
+            ],
+            "updated": [
+                "xxx"
+            ],
+            "validitFrom": [
+                "xxx"
+            ],
+            "validitTo": [
+                "xxx"
+            ]
+        }
+    }
+}
