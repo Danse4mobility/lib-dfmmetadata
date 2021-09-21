@@ -16,7 +16,7 @@
                             "xxx" /*hid*/
                         ],
                         "typeObject": [
-                            "${select|Collection,Dataset,DynamicResource,Event,Image,InteractiveResource,MovingImage,PhysicalObject,Service,Software,Sound,StaticResource,StillImage,Text,Video|}"
+                            "${1|Collection,Dataset,DynamicResource,Event,Image,InteractiveResource,MovingImage,PhysicalObject,Service,Software,Sound,StaticResource,StillImage,Text,Video|}"
                         ], /*Type object vocabulary.*/
                         "runner": [
                             "${2:select runner}"
