@@ -43,18 +43,19 @@ To enable autocompletion enter following entry in setting file in vscode `/C:/Us
 
 ```
 "json.schemas": [
-          {
+        {
             "fileMatch": [                
-                "/*.mediaSchemaMask.json"
+                "/.*mediaSchemaMask.json"
             ],
-            "url": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.jsonc"
-          }
+            "url": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.json"
+        }
     ]
 ```
 
 and
 
-Copy ... to `/C:/Users/.../AppData/Roaming/Code/User/snippets/json.json`
+Copy ... to `/C:/Users/.../AppData/Roaming/Code/User/snippets/json.json`. In this file values for keys of `.*Mask.json` are defined.
+
 
 ### Governing methods
 

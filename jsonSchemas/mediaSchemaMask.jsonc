@@ -13,13 +13,13 @@
                             "Capitalise: languagePrimary#authoriseAccount#objectMotivation#hashId"
                         ], /*capitalise, separate with #*/
                         "hashId": [
-                            "${define hid}" /*hid if it does not exist*/
+                            "Define hid" /*hid if it does not exist*/
                         ],
                         "typeObject": [
                             "${1}"
                         ], /*Type object vocabulary.*/
                         "runner": [
-                            "${define runner nospecial char}"
+                            "Define runner nospecial char"
                         ], /*libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
                         "resource": {
                             "typeEnvironmentService": [
@@ -47,10 +47,10 @@
                             } /*if stand alone leaveout. If with other resources, give a collection id and description. Collection is different typeObjectDeliveryFormats as well as the same formats with different hid that are supposed to be presented together. Etc. activeUser, passiveUser, infoDashboard html resources on danse portal. Collection members to be gathered with hidCollection*/
                         },
                         "title": [
-                            "xxx"
+                            "${4}"
                         ], /**/
                         "titleStandard": [
-                            "xxx"
+                            "${5}"
                         ], /*primaryLanguage titleOptions, spaces and special chars replaced by "_", lower, ascii*/
                         "subtitle": [
                             "xxx"
@@ -58,35 +58,33 @@
                         "location": [
                             {
                                 "typeEnvironmentService": [
-                                    "xxx"
+                                    "${6}"
                                 ], /*s3*/
                                 "account": [
-                                    "xxx"
+                                    "${7}"
                                 ], /*182059100462*/
                                 "bucket": [
-                                    "xxx"
+                                    "Define bucket"
                                 ], /*vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462*/
                                 "key": [
-                                    "xxx"
+                                    "Define key"
                                 ], /*documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3/template___internal___3b80283b-fc27-4489-8b54-8c87c6136997/rdmformats__html_clean__toc/template.html*/
                                 "keys": [
-                                    "xxx",
-                                    "xxx",
                                     "xxx"
                                 ], /*"documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3",
                 "template___internal___3b80283b-fc27-4489-8b54-8c87c6136997",
                 "rdmformats__html_clean__toc","technical___name.html"*/
                                 "basename": [
-                                    "xxx"
+                                    "Define basename"
                                 ] /*template_clean.html name human readable, intuitive*/
                             }
                         ],
                         "languagePrimary": [
-                            "xxx"
+                            "Define languagePrimary"
                         ], /*en,cs*/
                         "objectMotivation": [
-                            "${5|objectMotivation:,analyse,document,educate,help,manage|}"
-                        ], /*controlled vocabulary namespace objectMotivation. Main options: analyse,document,educate,help,manage*/
+                            "${8}"
+                        ], /*controlled vocabulary*/
                         "nameSpace": [
                             {
                                 "type": [
