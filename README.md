@@ -29,7 +29,7 @@ object in danse name space.
 
 ### What do I do
 
-> Schemas json for object types. To enable autocompletion, include in `/C:/Users/.../AppData/Roaming/Code/User/snippets/json.json`
+> Schemas json for object types. <a href='https://github.com/Danse4mobility/lib-dfmmetadata/tree/master/jsonSchemas' target='_blank'><span style='font-family:Arial;font-style: italic;font-size:1em;'>Choose from options in folder</span></a>. To enable autocompletion, include in `/C:/Users/.../AppData/Roaming/Code/User/snippets/json.json`
 
 > Tag used in documentation <a href='https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/tagsInDocumentation.md' target='_blank'><span style='font-family:Arial;font-style: italic;font-size:1em;'>tagsInDocumentation.md</span></a>. General use. To enhance functionality, include in `/C:/Users/.../AppData/Roaming/Code/User/snippets/markdown.json`
 
