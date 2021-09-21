@@ -29,13 +29,32 @@ object in danse name space.
 
 ### What do I do
 
-> Schemas json for object types. <a href='https://github.com/Danse4mobility/lib-dfmmetadata/tree/master/jsonSchemas' target='_blank'><span style='font-family:Arial;font-style: italic;font-size:1em;'>Choose from options in folder</span></a>. To enable autocompletion, include in `/C:/Users/.../AppData/Roaming/Code/User/snippets/json.json`
+> Schemas json for object types. <a href='https://github.com/Danse4mobility/lib-dfmmetadata/tree/master/jsonSchemas' target='_blank'><span style='font-family:Arial;font-style: italic;font-size:1em;'>Choose from options in folder</span></a>. 
 
 > Tag used in documentation <a href='https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/tagsInDocumentation.md' target='_blank'><span style='font-family:Arial;font-style: italic;font-size:1em;'>tagsInDocumentation.md</span></a>. General use. To enhance functionality, include in `/C:/Users/.../AppData/Roaming/Code/User/snippets/markdown.json`
 
 > [F.metadata.attach.path.based.R] reads file name and creates json, experimental
 
 > Verification of valid metadata, experimental
+
+### Prerequesties
+
+To enable autocompletion enter following entry in setting file in vscode `/C:/Users/.../AppData/Roaming/Code/User/settings.json`
+
+```
+"json.schemas": [
+        {
+            "fileMatch": [                
+                ,"/*.mediaSchema.json"
+            ],
+            "url": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.jsonc"
+        }
+    ]
+```
+
+and
+
+Copy ... to `/C:/Users/.../AppData/Roaming/Code/User/snippets/json.json`
 
 ### Governing methods
 
