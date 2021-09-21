@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.json", 
     "type": "object",
     "properties": {
-        "maskMedia": {
+        "mediaSchemaMask": {
             "defaultSnippets": [
                 {
                     "body": {
