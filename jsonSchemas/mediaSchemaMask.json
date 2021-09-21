@@ -16,7 +16,7 @@
                             "${define hid}" 
                         ],
                         "typeObject": [
-                            "${1}"
+                            "\"${1}\""
                         ], 
                         "runner": [
                             "${define runner nospecial char}"
