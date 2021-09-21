@@ -17,7 +17,7 @@
                         ],
                         "typeObject": [
                             "${1|Collection,Dataset,DynamicResource,Event,Image,InteractiveResource,MovingImage,PhysicalObject,Service,Software,Sound,StaticResource,StillImage,Text,Video|}"
-                        ], /*Type object vocabulary.*/
+                        ], /*Type object vocabulary.*/                        
                         "runner": [
                             "${2:select runner}"
                         ], /*libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
