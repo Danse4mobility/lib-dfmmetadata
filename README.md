@@ -29,12 +29,13 @@ object in danse name space.
 
 ### What do I do
 
-> Structures are pasive, no output
-> Verification of valid metadata
+> Schemas json for object types. To enable autocompletion, include in `/C:/Users/.../AppData/Roaming/Code/User/snippets/json.json`
 
-![how_to_create_media](https://github.com/Danse4mobility/lib-dfmmetadata/blob/master/attachments/lib_dfmmedia___how_to_create_media___help___itemCreation___vsb___by_nc_nd___StaticResource.PNG?raw=true)
+> Tag used in documentation <a href='https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/tagsInDocumentation.md' target='_blank'><span style='font-family:Arial;font-style: italic;font-size:1em;'>tagsInDocumentation.md</span></a>. General use. To enhance functionality, include in `/C:/Users/.../AppData/Roaming/Code/User/snippets/markdown.json`
 
-https://github.com/Danse4mobility/lib-dfmmetadata/blob/master/attachments/lib_dfmmedia___how_to_create_media___help___itemCreation___vsb___by_nc_nd___StaticResource.PNG
+> [F.metadata.attach.path.based.R] reads file name and creates json, experimental
+
+> Verification of valid metadata, experimental
 
 ### Governing methods
 
@@ -42,7 +43,7 @@ https://code.visualstudio.com/docs/languages/json
 
 replace comment regex `\/\*.*\*\/`
 
-## Manipulate me
+### Manipulate me
 
 **Updates and locations**
 
@@ -67,9 +68,10 @@ keep .mmd or .md source, generate .png, .svg version.
 **list content**
 
 cd $HOME/ws/lib-dfmmetadata; find $(pwd) -name .git -prune -o -name "*"
-_____________________________________________________________________________________
 
-## Name example media object types
+----
+
+### Example media object name structure
 
 **name**
 
@@ -132,11 +134,12 @@ user_cell_move_qgis_plugin___case_vector_long_distance_in_short_time___analyse__
 </tbody>
 </table>
 
-## List of functions
+### Details
 
-1) metadata.attach.path.based
+#### F.metadata.attach.path.based.R
 
-## 1) metadata.attach.path.based (last update 2021-09-03)
+last update 2021-09-03
+
 This function generates a json file of item metadata. 
 
 - Function throws an error if the item at the given path does not exist (ERROR: FILE DOES NOT EXIST).
@@ -145,7 +148,9 @@ This function generates a json file of item metadata.
 	- Example of a legend json file created by a function from lib-dfmmedia is - [here]()
 	- Proper name of the legend json file required - example: The media item is named mediaitem.png. The function will look for a json file named mediaitem___legend.json
 
-### Input parameters:
+![metadata from file name](https://github.com/Danse4mobility/lib-dfmmetadata/raw/master/attachments/lib_dfmmedia___how_to_create_media___help___itemCreation___vsb___by_nc_nd___StaticResource.PNG)
+
+#### Input parameters:
 
 EACH PARAMETER EXCEPT FOR item_path CAN BE OMITTED!
 
@@ -226,7 +231,7 @@ If not stated differently, following parameters are string
 - item_tag
   - tags - list 
 
-### EXAMPLE of use
+#### example of use
 
 ```
 list_tag = list()

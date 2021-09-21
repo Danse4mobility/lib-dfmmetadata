@@ -1,8 +1,8 @@
 {
-    "$schema": "./testSchema.json",/*https://code.visualstudio.com/docs/languages/json*/
+    "$schema": "./metadataCommonSchema.jsonc",/*https://code.visualstudio.com/docs/languages/json*/
     "type": "object",
     "properties": {
-        "metadataGeneral": {
+        "maskMedia": {
             "defaultSnippets": [
                 {
                     "body": {
@@ -16,10 +16,10 @@
                             "xxx" /*hid*/
                         ],
                         "typeObject": [
-                            "xxx"
+                            "${1:select type}"
                         ], /*Type object vocabulary. Main options: Collection,Dataset,DynamicResource,Event,Image,InteractiveResource,MovingImage,PhysicalObject,Service,Software,Sound,StaticResource,StillImage,Text,Video*/
                         "runner": [
-                            "xxx"
+                            "${2:select runner}"
                         ], /*libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
                         "resource": {
                             "typeEnvironmentService": [
@@ -85,7 +85,7 @@
                             "xxx"
                         ], /*en,cs*/
                         "objectMotivation": [
-                            "xxx"
+                            "${5|objectMotivation:,analyse,document,educate,help,manage|}"
                         ], /*controlled vocabulary namespace objectMotivation. Main options: analyse,document,educate,help,manage*/
                         "nameSpace": [
                             {
@@ -191,7 +191,7 @@
                             ],
                             "validitTo": [
                                 "xxx"
-                            ]
+                            ]                            
                         } /*dateTime ISO 8601 UTC zone 2020-06-01T10:40:19.283Z*/
                     }
                 }

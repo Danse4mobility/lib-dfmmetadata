@@ -1,0 +1,3 @@
+{
+	"$schema": "./maskMediaSchema.jsonc",
+	"maskMedia": /*delete and than C + space here will trigger scheme*/
