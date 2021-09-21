@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.jsonc", 
+    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.json", 
     "type": "object",
     "properties": {
         "maskMedia": {
