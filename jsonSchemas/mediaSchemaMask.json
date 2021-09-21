@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.jsonc",
+    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.jsonc", 
     "type": "object",
     "properties": {
         "maskMedia": {
@@ -8,28 +8,28 @@
                     "body": {
                         "primaryKey": [
                             "Capitalise: typeObject#"
-                        ],
+                        ], 
                         "sortKey": [
                             "Capitalise: languagePrimary#authoriseAccount#objectMotivation#hashId"
-                        ],
+                        ], 
                         "hashId": [
-                            "${2:define hid}" 
+                            "${define hid}" 
                         ],
                         "typeObject": [
-                            "${1|Collection,Dataset,DynamicResource,Event,Image,InteractiveResource,MovingImage,PhysicalObject,Service,Software,Sound,StaticResource,StillImage,Text,Video|}"
+                            "${1}"
                         ], 
                         "runner": [
-                            "${2:define runner}"
+                            "${define runner nospecial char}"
                         ], 
                         "resource": {
                             "typeEnvironmentService": [
                                 "xxx"
                             ], 
                             "typeObjectDeliveryFormats": [
-                                "xxx"
+                                "${2}"
                             ], 
                             "typeObjectDeliveryFormatsFlavours": [
-                                "xxx"
+                                "${3}"
                             ], 
                             "content": [
                                 "xxx"

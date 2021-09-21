@@ -8,29 +8,29 @@
                     "body": {
                         "primaryKey": [
                             "Capitalise: typeObject#"
-                        ], /**/
+                        ], /*capitalise, end with #*/
                         "sortKey": [
                             "Capitalise: languagePrimary#authoriseAccount#objectMotivation#hashId"
-                        ], /**/
+                        ], /*capitalise, separate with #*/
                         "hashId": [
-                            "${2:define hid}" /**/
+                            "${define hid}" /*hid if it does not exist*/
                         ],
                         "typeObject": [
-                            "${1|Collection,Dataset,DynamicResource,Event,Image,InteractiveResource,MovingImage,PhysicalObject,Service,Software,Sound,StaticResource,StillImage,Text,Video|}"
+                            "${1}"
                         ], /*Type object vocabulary.*/
                         "runner": [
-                            "${2:define runner}"
+                            "${define runner nospecial char}"
                         ], /*libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
                         "resource": {
                             "typeEnvironmentService": [
                                 "xxx"
                             ], /*quicksight*/
                             "typeObjectDeliveryFormats": [
-                                "xxx"
-                            ], /*Type object delivery formats. Main options: geospatial,htmlDocument,jsonSchema,pageMap,pdfDocument,presentationRSlides,productSheet,setData,setMetadata,template,widgetHtmlDataTable,widgetHtmlGraphDygraph,widgetHtmlGraphMermaid,widgetHtmlNews,widgetHtmltableMarkdown,wordDocument.*/
+                                "${2}"
+                            ], /*Type object delivery formats.*/
                             "typeObjectDeliveryFormatsFlavours": [
-                                "xxx"
-                            ], /*Based on the typeObjectDeliveryFormats there some flavours that vary accourting to need and type of document. Confortable view and search. These include rdmformats__html_clean__toc, markdown__html4tags__toc, rdmformats__material, rmarkdown__html_document__toc__theme_united, rmarkdown__html_document__toc_float__theme_united, rmarkdown__pdf_document__toc, rmarkdown__word_document__toc*/
+                                "${3}"
+                            ], /*Based on the typeObjectDeliveryFormats there some flavours that vary accourting to need and type of document. Confortable view and search.*/
                             "content": [
                                 "xxx"
                             ], /*TODO ? data visualisation*/
