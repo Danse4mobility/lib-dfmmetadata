@@ -7,19 +7,19 @@
                 {
                     "body": {
                         "primaryKey": [
-                            "xxx"
-                        ], /*STATICRESOURCE# ... typeObject#*/
+                            "Capitalise: typeObject#"
+                        ], /**/
                         "sortKey": [
-                            "xxx"
-                        ], /*CS#INTERNAL#EDUCATE#87dcee44-1650-4d22-abcc-25926ab9977a ... languagePrimary#authoriseAccount#objectMotivation#hashId*/
+                            "Capitalise: languagePrimary#authoriseAccount#objectMotivation#hashId"
+                        ], /**/
                         "hashId": [
-                            "xxx" /*hid*/
+                            "${2:define hid}" /**/
                         ],
                         "typeObject": [
                             "${1|Collection,Dataset,DynamicResource,Event,Image,InteractiveResource,MovingImage,PhysicalObject,Service,Software,Sound,StaticResource,StillImage,Text,Video|}"
                         ], /*Type object vocabulary.*/
                         "runner": [
-                            "${2:select runner}"
+                            "${2:define runner}"
                         ], /*libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
                         "resource": {
                             "typeEnvironmentService": [
