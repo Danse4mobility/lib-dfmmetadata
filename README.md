@@ -31,7 +31,15 @@ object in danse name space.
 
 > Schemas json for object types. <a href='https://github.com/Danse4mobility/lib-dfmmetadata/tree/master/jsonSchemas' target='_blank'><span style='font-family:Arial;font-style: italic;font-size:1em;'>Choose from options in folder</span></a>. 
 
-> Tag used in documentation <a href='https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/tagsInDocumentation.md' target='_blank'><span style='font-family:Arial;font-style: italic;font-size:1em;'>tagsInDocumentation.md</span></a>. General use. To enhance functionality, include in `/C:/Users/.../AppData/Roaming/Code/User/snippets/markdown.json`
+> Tag used in documentation <a href='https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/tagsInDocumentation.md' target='_blank'><span style='font-family:Arial;font-style: italic;font-size:1em;'>tagsInDocumentation.md</span></a>. General use. Include in `/C:/Users/.../AppData/Roaming/Code/User/snippets/markdown.json`
+
+`POINTER.*`
+`DIVISOR.*`
+`MISC.*`
+
+> Snippets to create file name included in `/C:/Users/.../AppData/Roaming/Code/User/snippets/markdown.json`
+
+`SYNT.*`
 
 > [F.metadata.attach.path.based.R] reads file name and creates json, experimental
 
@@ -56,6 +64,7 @@ and
 
 Copy ... to `/C:/Users/.../AppData/Roaming/Code/User/snippets/json.json`. In this file values for keys of `.*Mask.json` are defined.
 
+Copy ... to `/C:/Users/.../AppData/Roaming/Code/User/snippets/markdown.json`
 
 ### Governing methods
 
