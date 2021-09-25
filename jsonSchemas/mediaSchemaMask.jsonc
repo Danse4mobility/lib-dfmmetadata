@@ -7,191 +7,173 @@
                 {
                     "body": {
                         "primaryKey": [
-                            "Capitalise: typeObject#"
-                        ], /*capitalise, end with #*/
+                            "xxx"
+                        ], /*capitalise typesObject# end with #*/
                         "sortKey": [
-                            "Capitalise: languagePrimary#authoriseAccount#objectMotivation#hashId"
-                        ], /*capitalise, separate with #*/
-                        "hashId": [
-                            "Define hid" /*hid if it does not exist*/
-                        ],
-                        "typeObject": [
-                            "${1}"
-                        ], /*Type object vocabulary.*/
-                        "runner": [
-                            "Define runner nospecial char"
-                        ], /*libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
-                        "resource": {
-                            "typeEnvironmentService": [
-                                "xxx"
-                            ], /*quicksight*/
-                            "typeObjectDeliveryFormats": [
-                                "${2}"
-                            ], /*Type object delivery formats.*/
-                            "typeObjectDeliveryFormatsFlavours": [
-                                "${3}"
-                            ], /*Based on the typeObjectDeliveryFormats there some flavours that vary accourting to need and type of document. Confortable view and search.*/
-                            "content": [
-                                "xxx"
-                            ], /*TODO ? data visualisation*/
-                            "collection": {
-                                "hashIdCollection": [
-                                    "xxx"
-                                ], /*hid of the collection*/
-                                "sortKeyCollection": [
-                                    "xxx"
-                                ], /*COLLECTION#87dcee44-1650-4d22-abcc-25926ab9977a*/
-                                "descriptionCollection": [
-                                    "xxx"
-                                ] /*what the collection is about*/
-                            } /*if stand alone leaveout. If with other resources, give a collection id and description. Collection is different typeObjectDeliveryFormats as well as the same formats with different hid that are supposed to be presented together. Etc. activeUser, passiveUser, infoDashboard html resources on danse portal. Collection members to be gathered with hidCollection*/
-                        },
-                        "title": [
-                            "${4}"
-                        ], /**/
+                            "xxx"
+                        ], /*Capitalise: languagePrimary#authoriseAccount#objectMotivation#hashId*/
+                        "runners": [
+                            "xxx"
+                        ], /*Define runner nospecial char. libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
                         "titleStandard": [
-                            "${5}"
-                        ], /*primaryLanguage titleOptions, spaces and special chars replaced by "_", lower, ascii*/
+                            "xxx"
+                        ], /*primaryLanguage title, spaces and special chars replaced by "_", lower, ascii*/
+                        "language": [
+                            "xxx"
+                        ], /*used to source about*/
+                        "accessRights": [
+                            "xxx"
+                        ], /**/
+                        "objectMotivations": [
+                            "xxx"
+                        ], /*controlled vocabulary*/
+                        "accrualMethod": [
+                            "xxx"
+                        ], /**/
+                        "rightsholder": [
+                            "xxx"
+                        ], /**/
+                        "license": [
+                            "xxx"
+                        ], /**/
+                        "typesObject": [
+                            "xxx"
+                        ], /**/
+                        "typesObjectDeliveryFormats": [
+                            "xxx"
+                        ], /**/
+                        "typesObjectDeliveryFormatsFlavours": [
+                            "xxx"
+                        ], /*Based on the typeObjectDeliveryFormats there some flavours that vary accourting to need and type of document. Confortable view and search.*/
+                        "identifier": [
+                            "xxx" /*hid if it does not exist*/
+                        ],
+                        "schemasMask": [
+                            "xxx" /**/
+                        ],
+                        "title": [
+                            "xxx"
+                        ], /*from titleFull. and language*/
                         "subtitle": [
                             "xxx"
                         ], /*composed of translated sortKey*/
-                        "location": [
-                            {
-                                "typeEnvironmentService": [
-                                    "${6}"
-                                ], /*s3*/
-                                "account": [
-                                    "${7}"
-                                ], /*182059100462*/
-                                "bucket": [
-                                    "Define bucket"
-                                ], /*vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462*/
-                                "key": [
-                                    "Define key"
-                                ], /*documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3/template___internal___3b80283b-fc27-4489-8b54-8c87c6136997/rdmformats__html_clean__toc/template.html*/
-                                "keys": [
-                                    "xxx"
-                                ], /*"documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3",
-                "template___internal___3b80283b-fc27-4489-8b54-8c87c6136997",
-                "rdmformats__html_clean__toc","technical___name.html"*/
-                                "basename": [
-                                    "Define basename"
-                                ] /*template_clean.html name human readable, intuitive*/
-                            }
+                        "description": [
+                            "xxx"
+                        ], /*from descriptionFullCs. and language*/
+                        "owner": [
+                            "xxx"
+                        ], /*HylmarJ*/
+                        "creator": [
+                            "xxx"
+                        ], /*Jiří Hylmar*/
+                        "licensePublic": [
+                            false
+                        ], /**/
+                        "about": {
+                            "titleFullCs": [
+                                "xxx"
+                            ], /*Šablona generování stránek*/
+                            "titleFullEn": [
+                                "xxx"
+                            ], /*Template for pages rendering*/
+                            "titleShortCs": [
+                                "xxx"
+                            ], /*Šablona generování stránek*/
+                            "titleShortEn": [
+                                "xxx"
+                            ], /*Template for pages rendering*/
+                            "descriptionFullCs": [
+                                "xxx"
+                            ], /*Toto je popis výstupu šablony, nikoliv kódu. Na základě vstupů `render.json` a podpůrných souborů vygeneruje objekt typu stránka.*/
+                            "descriptionFullEn": [
+                                "xxx"
+                            ], /*This is a description of the template output, not the code. It generates a page object based on `render.json` inputs and supporting files.*/
+                            "descriptionShortCs": [
+                                "xxx"
+                            ], /*Popis výstupu šablony. `render.json`*/
+                            "descriptionShortEn": [
+                                "xxx"
+                            ], /*Description of the template output. `render.json`*/
+                            "keywordsCs": [
+                                "xxx"
+                            ], /**/
+                            "keywordsEn": [
+                                "xxx"
+                            ] /**/
+                        }
+                    },
+                    "location": [
+                        {
+                            "typeEnvironmentService": [
+                                "xxx"
+                            ], /*s3*/
+                            "account": [
+                                "xxx"
+                            ], /*182059100462*/
+                            "bucket": [
+                                "xxx"
+                            ], /*vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462*/
+                            "key": [
+                                "xxx"
+                            ], /*key is everything except bucket name*/
+                            "keys": [
+                                "xxx"
+                            ], /*"documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3", "template___internal___3b80283b-fc27-4489-8b54-8c87c6136997","rdmformats__html_clean__toc","technical___name.html"*/
+                            "basename": [
+                                "xxx"
+                            ] /*template_clean.html name human readable, intuitive*/
+                        }
+                    ],
+                    "resource": {
+                        "typeEnvironmentService": [
+                            "xxx"
+                        ], /*quicksight*/
+                        "content": [
+                            "xxx"
+                        ], /*TODO ? data visualisation*/
+                        "hashIdCollection": [
+                            "xxx"
                         ],
-                        "languagePrimary": [
-                            "Define languagePrimary"
-                        ], /*en,cs*/
-                        "objectMotivation": [
-                            "${8}"
-                        ], /*controlled vocabulary*/
-                        "nameSpace": [
-                            {
-                                "type": [
-                                    "xxx"
-                                ], /*TODO ? relative*/
-                                "destination": [
-                                    "xxx"
-                                ], /*app, doc*/
-                                "value": [
-                                    "xxx"
-                                ] /*this will become '/en/documentation/internal/template.html' to be published under particula domain(s)*/
-                            }
+                        "sortKeyCollection": [
+                            "xxx"
                         ],
+                        "descriptionCollection": [
+                            "xxx"
+                        ] /*if stand alone leaveout. If with other resources, give a collection id and description. Collection is different typeObjectDeliveryFormats as well as the same formats with different hid that are supposed to be presented together. Etc. activeUser, passiveUser, infoDashboard html resources on danse portal. Collection members to be gathered with hidCollection*/
+                    },
+                    "publishing": {
+                        "nameSpaceType": [
+                            "xxx"
+                        ], /*TODO ? relative*/
+                        "nameSpaceDestination": [
+                            "xxx"
+                        ], /*app, doc*/
+                        "nameSpaceValue": [
+                            "xxx"
+                        ], /*this will become '/en/documentation/internal/template.html' to be published under particula domain(s)*/
                         "publishDefault": [
                             "xxx"
-                        ], /*lab_danse_tech*/
-                        "about": {
-                            "titleOptions": {
-                                "full": {
-                                    "cs": [
-                                        "xxx"
-                                    ], /*Šablona generování stránek*/
-                                    "en": [
-                                        "xxx"
-                                    ] /*Template for pages rendering*/
-                                },
-                                "short": {
-                                    "cs": [
-                                        "xxx"
-                                    ], /*sablona*/
-                                    "en": [
-                                        "xxx"
-                                    ] /*template*/
-                                }
-                            },
-                            "description": {
-                                "full": {
-                                    "cs": [
-                                        "xxx"
-                                    ], /*Toto je popis výstupu šablony, nikoliv kódu. Na základě vstupů `render.json` a podpůrných souborů vygeneruje objekt typu stránka.*/
-                                    "en": [
-                                        "xxx"
-                                    ] /*This is a description of the template output, not the code. It generates a page object based on `render.json` inputs and supporting files.*/
-                                },
-                                "short": {
-                                    "cs": [
-                                        "xxx"
-                                    ], /*Popis výstupu šablony. `render.json`*/
-                                    "en": [
-                                        "xxx"
-                                    ] /*Description of the template output. `render.json`*/
-                                }
-                            },
-                            "keyword": {
-                                "cs": [
-                                    "xxx"
-                                ], /**/
-                                "en": [
-                                    "xxx"
-                                ] /**/
-                            },
-                            "owner": [
+                        ] /*lab_danse_tech*/
+                    },
+                    "tags": [
+                        {
+                            "key": [
                                 "xxx"
-                            ], /*HylmarJ*/
-                            "creator": [
-                                "xxx"
-                            ], /*Jiří Hylmar*/
-                            "rightsholder": [
-                                "xxx"
-                            ], /*Rights holder, dictionary. Main options. bdl, it4, d4m, ipr, iot, neu, o2c, tmc, thw, vsb*/
-                            "license": {
-                                "public": [
-                                    false
-                                ], /**/
-                                "license": [
-                                    "xxx"
-                                ], /*Licese, dictionary. Main options. copyright, ccByNcNd, ccByNcSa, specialRules*/
-                                "accessRights": [
-                                    "xxx"
-                                ] /*Access rights, dictionary. Main options. intite,extite,indite,souite*/
-                            },
-                            "accrualMethod": [
-                                "xxx"
-                            ] /*Accrual method, dictionary. Main options. deposit, donation, itemCreation, license, loan, purchase*/
-                        },
-                        "tag": [
-                            {
-                                "key": [
-                                    "xxx"
-                                ] /*value*/
-                            }
-                        ],
-                        "date": {
-                            "created": [
-                                "xxx"
-                            ],
-                            "updated": [
-                                "xxx"
-                            ],
-                            "validitFrom": [
-                                "xxx"
-                            ],
-                            "validitTo": [
-                                "xxx"
-                            ]
-                        } /*dateTime ISO 8601 UTC zone 2020-06-01T10:40:19.283Z*/
-                    }
+                            ] /*value*/
+                        }
+                    ],
+                    "dateCreated": [
+                        "xxx"
+                    ],
+                    "dateUpdated": [
+                        "xxx"
+                    ],
+                    "validitFrom": [
+                        "xxx"
+                    ],
+                    "validitTo": [
+                        "xxx"
+                    ] /*dateTime ISO 8601 UTC zone 2020-06-01T10:40:19.283Z*/
                 }
             ]
         }
