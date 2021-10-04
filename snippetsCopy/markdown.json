@@ -1,0 +1,226 @@
+{
+	// https://code.visualstudio.com/docs/editor/userdefinedsnippets
+	
+	//----------------------------------\
+	// POINTERS
+
+	// write text linked "Document name"	
+	// copy address to clipboard
+	// insert snippet
+	"POINTERtextClip": {
+		"prefix": "POINTERtextClip",
+		"body": [
+			"<a href='${CLIPBOARD}' target='_blank'><span style='font-family:Times;font-style: italic;font-size:0.8em;'>${1:Learn more}</span>.</a>"
+		]
+	},
+
+	// write text linked "Document name"
+	// copy address to clipboard
+	// insert snippet
+	"POINTERsymbolClip": {
+		"prefix": "POINTERsymbolClip",
+		"body": [
+			"<a href='${CLIPBOARD}' target='_blank'><i class='fa fa-link fa-2x' style='color: seablue'></i>.</a>"
+		]
+	},
+
+	// copy address to clipboard
+	// insert snippet
+	// write link name
+	"POINTERhypertextClip": {
+		"prefix": "POINTERhypertextClip",
+		"body": [
+			"<a href='${CLIPBOARD}' target='_blank'><span style='font-family:Arial;font-style: italic;font-size:1em;'>${1}</span></a>"
+		]
+	},	
+
+	//----------------------------------\
+	// STATUSES
+
+	// . insert snippet call status name, no action
+
+	"STATUSunderConstruction": {
+		"prefix": "STATUSunderConstruction",
+		"body": [
+			"<i class='fa fa-wrench fa-2x' style='color: magenta'></i> status :: underConstruction"
+		]
+	},
+
+	"STATUScompleted": {
+		"prefix": "STATUScompleted",
+		"body": [
+			"<i class='fa fa-check-circle fa-2x' style='color: green'></i> status :: completed"
+		]
+	},
+
+	"STATUSknownIssue": {
+		"prefix": "STATUSknownIssue",
+		"body": [
+			"<i class='fa fa-exclamation fa-2x' style='color: red'></i> status :: knownIssue"
+		]
+	},
+
+	"STATUSgettingReady": {
+		"prefix": "STATUSgettingReady",
+		"body": [
+			"<i class='fa fa-spinner fa-2x' style='color: orange'></i> status :: gettingReady"
+		]
+	},
+
+	"STATUSisItDone": {
+		"prefix": "STATUSisItDone",
+		"body": [
+			"<i class='fa fa-question fa-2x' style='color: cyan'></i> Status :: isItDone"
+		]
+	},
+
+	"STATUSsolveMe": {
+		"prefix": "STATUSsolveMe",
+		"body": [
+			"<i class='fa fa-bomb fa-2x' style='color: firebrick'></i> Status :: solveMe"
+		]
+	},
+
+	//----------------------------------\
+	// DIVISORS
+
+	// . insert snippet, write divisor name
+
+	"DIVISORorange":{
+		"prefix": "DIVISORorange",
+		"body":[
+			"<div style='text-align:right;background-color:Orange'>*${1}*</div>"
+		]
+		},
+	"DIVISORwheat":{
+		"prefix": "DIVISORwheat",
+		"body":[
+			"<div style='text-align:right;background-color:Wheat'>*${1}*</div>"
+		]
+		},
+	"DIVISORroyalBlue":{
+		"prefix": "DIVISORroyalBlue",
+		"body":[
+			"<div style='text-align:right;background-color:RoyalBlue;color:White'>*${1}*</div>"
+		]
+		},
+	"DIVISORlightBlue":{
+		"prefix": "DIVISORlightBlue",
+		"body":[
+			"<div style='text-align:right;background-color:LightBlue'>*${1}*</div>"
+		]
+		},
+	"DIVISORbrown":{
+		"prefix": "DIVISORbrown",
+		"body":[
+			"<div style='text-align:right;background-color:Brown;color:White'>*${1}*</div>"
+		]
+		},
+	"DIVISORtan":{
+		"prefix": "DIVISORtan",
+		"body":[
+			"<div style='text-align:right;background-color:Tan'>*${1}*</div>"
+		]
+		},
+	"DIVISORteal":{
+		"prefix": "DIVISORteal",
+		"body":[
+			"<div style='text-align:right;background-color:Teal;color:White'>*${1}*</div>"
+		]
+		},
+	"DIVISORpaleGreen":{
+		"prefix": "DIVISORpaleGreen",
+		"body":[
+			"<div style='text-align:right;background-color:PaleGreen'>*${1}*</div>"
+		]
+		},
+	"DIVISORindigo":{
+		"prefix": "DIVISORindigo",
+		"body":[
+			"<div style='text-align:right;background-color:Indigo;color:White'>*${1}*</div>"
+		]
+		},
+	"DIVISORdarkGrey":{
+		"prefix": "DIVISORdarkGrey",
+		"body":[
+			"<div style='text-align:right;background-color:DarkGrey'>*${1}*</div>"
+		]
+		},
+	"DIVISORcrimson":{
+		"prefix": "DIVISORcrimson",
+		"body":[
+			"<div style='text-align:right;background-color:Crimson;color:White'>*${1}*</div>"
+		]
+		},
+	"DIVISORlightPink":{
+		"prefix": "DIVISORlightPink",
+		"body":[
+			"<div style='text-align:right;background-color:LightPink'>*${1}*</div>"
+		]
+		},
+	"DIVISORolive":{
+		"prefix": "DIVISORolive",
+		"body":[
+			"<div style='text-align:right;background-color:Olive;color:White'>*${1}*</div>"
+		]
+		},
+	"DIVISORkhaki":{
+		"prefix": "DIVISORkhaki",
+		"body":[
+			"<div style='text-align:right;background-color:Khaki'>*${1}*</div>"
+		]
+		},
+	"DIVISORblack":{
+		"prefix": "DIVISORblack",
+		"body":[
+			"<div style='text-align:right;background-color:Black;color:White'>*${1}*</div>"
+		]
+		},
+	"DIVISORlavender":{
+		"prefix": "DIVISORlavender",
+		"body":[
+			"<div style='text-align:right;background-color:Lavender'>*${1}*</div>"
+		]
+		},
+	
+	//----------------------------------\
+	// MISC
+	
+	"MISCcommentDate": {
+		"prefix": "MISCcommentDate",
+		"body": ["${BLOCK_COMMENT_START}",
+			   "${CURRENT_YEAR}/${CURRENT_MONTH}/${CURRENT_DATE} ${1}",
+			   "${BLOCK_COMMENT_END}"]
+	},
+
+	"MISCnameUser": {
+		"prefix": "MISCnameUser",
+		"body":[
+			"<i class='fa fa-thumbtack fa-2x' style='color: blue'></i>","*@${1:surename}*"
+		]
+	},
+
+	"MISCfaviconClip": {
+		"prefix": "MISCfaviconClip",
+		"body":[
+			"<link rel='shortcut icon' href='${CLIPBOARD}'/>"
+		]
+	},
+
+	"MISCinFaviconClip": {
+		"prefix": "MISCinFaviconClip",
+		"body":[
+			"<p align='center'><img src='${CLIPBOARD}' style='border:0' alt='theme icon' title='theme icon' width='100' height='100'></p><div style=font-size:8px;text-align:center>Icons made by <a href='https://www.freepik.com' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a></div>"
+		]
+	},
+
+	//----------------------------------\
+	// SCHEMAS
+
+	"SYNTmediaSchemaMask": {
+		"prefix": "SYNTmediaSchemaMask",
+		"body": [
+			"${1:runners define:}___${2:title define:}___${3|language vocabulary:,en,cs|}___${4|accessRights vocabulary:,extite,intite,indite,souite|}___${5|objectMotivations vocabulary:,advertise,analyse,document,educate,help,manage|}___${6|accrualMethod vocabulary:,deposit,donation,itemCreation,license,loan,purchase|}___${7|rightsHolder vocabulary:,d4m,ipr,it4,iot,bdl,neu,o2c,tmc,thw,vsb|}___${8|license vocabulary:,copyright,ccByNcNd,ccByNcSa,specialRules|}___${9|typesObject vocabulary:,Collection,Dataset,DynamicResource,Event,expression,geospatial,htmlDocument,Image,InteractiveResource,jsonSchema,MovingImage,pageMap,pdfDocument,PhysicalObject,presentationRSlides,productSheet,Service,setData,setMetadata,Software,Sound,StaticResource,StillImage,template,Text,Video|}___${10|typesObjectDeliveryFormats vocabulary:,graphMermaid,widgetHtmlDataTable,widgetHtmlGraphDygraph,widgetHtmlGraphMermaid,widgetHtmlNews,widgetHtmltable,widgetHtmltableMarkdown,wordDocument,screenShot|}___${11|typesObjectDeliveryFormatsFlavours vocabulary:,marhtmtoc,rmahtmdoctocflotheuni,rmahtmdoctoctheuni,rmapdfdoctoc,rmawordoctoc,rmdhtmcletoc,rmdmat|}___${12:identifier define:}___${13|format vocabulary:,docx,gif,html,jpg,json,md,pdf,png,Rmd,svg,mmd|}"
+		]		
+	},	
+}

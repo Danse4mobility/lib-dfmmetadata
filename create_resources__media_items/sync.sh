@@ -1,0 +1,1 @@
+aws s3 sync --profile default /home/hylmarj/doc-workflow/scratch/06d91fc8-e7dd-40b9-ae5c-9fb8f5f71541__media_items/ s3://vsbcda-dandra-com-intite-sss-infdev-wfs-182059100462/06d91fc8-e7dd-40b9-ae5c-9fb8f5f71541__media_items/

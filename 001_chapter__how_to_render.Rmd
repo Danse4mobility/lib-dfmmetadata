@@ -1,3 +1,86 @@
+---
+params:
+
+  title: "`r params$title`"
+  subtitle: "`r params$subtitle`"
+  author: "`r params$author`"
+  date: "`r Sys.time()`"
+  favicon: "`r params$favicon`"
+
+output:
+        
+  rmdformats::html_clean:
+      toc_depth: 4
+      toc_float:
+        collapsed: yes
+        smooth_scroll: no
+      number_sections: yes
+      includes:
+        in_header: "/home/hylmarj/lib-dfmrender/001_chapter__how_to_render__favicon.html"
+  rmarkdown::pdf_document:
+    toc: yes
+    toc_depth: 3
+    number_sections: yes
+  rmarkdown::html_document:
+    toc: yes
+    toc_depth: 3
+    number_sections: yes
+    theme: united
+  rmarkdown::word_document:
+    toc: yes
+    toc_depth: "3"
+    number_sections: yes
+geometry: margin=2cm
+editor_options:
+  chunk_output_type: console
+always_allow_html: yes
+---
+
+<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
+<style>
+pre {
+  overflow-x: auto;
+}
+pre code {
+  word-wrap: normal;
+  white-space: pre;
+}
+</style>
+
+<!--
+text starts here
+https://github.com/Danse4mobility/lib-dfmrender.git-->
+
+## Icon
+
+#### howto
+
+```
+<p align="center">
+<img src="https://vsbcda-dandra-com-intite-sss-inftes-wfs-182059100462.s3-eu-west-1.amazonaws.com/99eef5de-d729-4f21-80f3-bc421f870cd5__favicons/flaticon/4581958-origami/png/025-camel.png" alt="025-camel" title='025-camel' width="100" height="100">
+</p>
+<p style=font-size:8px;text-align:center>
+Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+</p>
+```
+
+#### implementation
+
+<p align="center">
+<img src="https://vsbcda-dandra-com-intite-sss-inftes-wfs-182059100462.s3-eu-west-1.amazonaws.com/99eef5de-d729-4f21-80f3-bc421f870cd5__favicons/flaticon/4581958-origami/png/025-camel.png" alt="025-camel" title='025-camel' width="100" height="100">
+</p>
+<p style=font-size:8px;text-align:center>
+Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+</p>
+
+
+
 ## Tags and snippets in documentation
 
 ### About

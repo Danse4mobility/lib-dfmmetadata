@@ -1,181 +1,157 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.jsonc",
-    "type": "object",
-    "properties": {
-        "maskMedia": {
-            "defaultSnippets": [
-                {
-                    "body": {
-                        "primaryKey": [
-                            "xxx"
-                        ],
-                        "sortKey": [
-                            "xxx"
-                        ],
-                        "runners": [
-                            "xxx"
-                        ],
-                        "titleStandard": [
-                            "xxx"
-                        ],
-                        "language": [
-                            "xxx"
-                        ],
-                        "accessRights": [
-                            "xxx"
-                        ],
-                        "objectMotivations": [
-                            "xxx"
-                        ],
-                        "accrualMethod": [
-                            "xxx"
-                        ],
-                        "rightsholder": [
-                            "xxx"
-                        ],
-                        "license": [
-                            "xxx"
-                        ],
-                        "typesObject": [
-                            "xxx"
-                        ],
-                        "typesObjectDeliveryFormats": [
-                            "xxx"
-                        ],
-                        "typesObjectDeliveryFormatsFlavours": [
-                            "xxx"
-                        ],
-                        "identifier": [
-                            "xxx"
-                        ],
-                        "schemasMask": [
-                            "xxx"
-                        ],
-                        "title": [
-                            "xxx"
-                        ],
-                        "subtitle": [
-                            "xxx"
-                        ],
-                        "description": [
-                            "xxx"
-                        ],
-                        "owner": [
-                            "xxx"
-                        ],
-                        "creator": [
-                            "xxx"
-                        ],
-                        "licensePublic": [
-                            false
-                        ],
-                        "about": {
-                            "titleFullCs": [
-                                "xxx"
-                            ],
-                            "titleFullEn": [
-                                "xxx"
-                            ],
-                            "titleShortCs": [
-                                "xxx"
-                            ],
-                            "titleShortEn": [
-                                "xxx"
-                            ],
-                            "descriptionFullCs": [
-                                "xxx"
-                            ],
-                            "descriptionFullEn": [
-                                "xxx"
-                            ],
-                            "descriptionShortCs": [
-                                "xxx"
-                            ],
-                            "descriptionShortEn": [
-                                "xxx"
-                            ],
-                            "keywordsCs": [
-                                "xxx"
-                            ],
-                            "keywordsEn": [
-                                "xxx"
-                            ]
-                        }
-                    },
-                    "location": [
-                        {
-                            "typeEnvironmentService": [
-                                "xxx"
-                            ],
-                            "account": [
-                                "xxx"
-                            ],
-                            "bucket": [
-                                "xxx"
-                            ],
-                            "key": [
-                                "xxx"
-                            ],
-                            "keys": [
-                                "xxx"
-                            ],
-                            "basename": [
-                                "xxx"
-                            ]
-                        }
-                    ],
-                    "resource": {
-                        "typeEnvironmentService": [
-                            "xxx"
-                        ],
-                        "content": [
-                            "xxx"
-                        ],
-                        "hashIdCollection": [
-                            "xxx"
-                        ],
-                        "sortKeyCollection": [
-                            "xxx"
-                        ],
-                        "descriptionCollection": [
-                            "xxx"
-                        ]
-                    },
-                    "publishing": {
-                        "nameSpaceType": [
-                            "xxx"
-                        ],
-                        "nameSpaceDestination": [
-                            "xxx"
-                        ],
-                        "nameSpaceValue": [
-                            "xxx"
-                        ],
-                        "publishDefault": [
-                            "xxx"
-                        ]
-                    },
-                    "tags": [
-                        {
-                            "key": [
-                                "xxx"
-                            ]
-                        }
-                    ],
-                    "dateCreated": [
-                        "xxx"
-                    ],
-                    "dateUpdated": [
-                        "xxx"
-                    ],
-                    "validitFrom": [
-                        "xxx"
-                    ],
-                    "validitTo": [
-                        "xxx"
-                    ]
-                }
+    "body": {
+        "primaryKey": [
+            "xxx"
+        ],
+        "sortKey": [
+            "xxx"
+        ],
+        "titleStandard": [
+            "xxx"
+        ],
+        "isPartOf": [
+            "xxx"
+        ],
+        "details": {
+            "runners": [
+                "xxx"
+            ],
+            "language": [
+                "xxx"
+            ],
+            "accessRights": [
+                "xxx"
+            ],
+            "objectMotivations": [
+                "xxx"
+            ],
+            "accrualMethod": [
+                "xxx"
+            ],
+            "rightsholder": [
+                "xxx"
+            ],
+            "license": [
+                "xxx"
+            ],
+            "typesObject": [
+                "xxx"
+            ],
+            "typesObjectDeliveryFormats": [
+                "xxx"
+            ],
+            "typesObjectDeliveryFormatsFlavours": [
+                "xxx"
+            ],
+            "identifier": [
+                "xxx"
+            ],
+            "extension": [
+                "xxx"
             ]
-        }
+        },
+        "about": {
+            "title": [
+                "xxx"
+            ],
+            "subtitle": [
+                "xxx"
+            ],
+            "description": [
+                "xxx"
+            ],
+            "owner": [
+                "xxx"
+            ],
+            "creator": [
+                "xxx"
+            ],
+            "licensePublic": [
+                false
+            ],
+            "titleFullCs": [
+                "xxx"
+            ],
+            "titleFullEn": [
+                "xxx"
+            ],
+            "titleShortCs": [
+                "xxx"
+            ],
+            "titleShortEn": [
+                "xxx"
+            ],
+            "descriptionFullCs": [
+                "xxx"
+            ],
+            "descriptionFullEn": [
+                "xxx"
+            ],
+            "descriptionShortCs": [
+                "xxx"
+            ],
+            "descriptionShortEn": [
+                "xxx"
+            ],
+            "keywordsCs": [
+                "xxx"
+            ],
+            "keywordsEn": [
+                "xxx"
+            ]
+        },
+        "locations": {
+            "s3": {
+                "typeEnvironmentService": [
+                    "xxx"
+                ],
+                "account": [
+                    "xxx"
+                ],
+                "bucket": [
+                    "xxx"
+                ],
+                "key": [
+                    "xxx"
+                ],
+                "keys": [
+                    "xxx"
+                ],
+                "basename": [
+                    "xxx"
+                ]
+            }
+        },
+        "publishing": {
+            "nameSpaceType": [
+                "xxx"
+            ],
+            "nameSpaceDestination": [
+                "xxx"
+            ],
+            "nameSpaceValue": [
+                "xxx"
+            ],
+            "publishDefault": [
+                "xxx"
+            ]
+        },
+        "tags": [
+            {
+                "xxx": "xxx"
+            }
+        ],
+        "dateCreated": [
+            "xxx"
+        ],
+        "dateUpdated": [
+            "xxx"
+        ],
+        "validitFrom": [
+            "xxx"
+        ],
+        "validitTo": [
+            "xxx"
+        ]
     }
 }
