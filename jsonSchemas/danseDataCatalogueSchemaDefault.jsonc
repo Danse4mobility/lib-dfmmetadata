@@ -1,11 +1,11 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc", /*https://code.visualstudio.com/docs/languages/json. Shecma content is CAMEL-CASE ONLY. Groups at the second level become dynamoDb columns*/
+    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc", /*https://code.visualstudio.com/docs/languages/json. Schema keys in CAMEL-CASE ONLY. DCMI namespace is primary system. Danse namespace secondary. Groups at the naxt level after "body" become dynamoDb columns*/
     "type": "object",
     "properties": {
         "danseDataCatalogueMaskDefault": {
             "defaultSnippets": [
                 {
-                    "body": { /*the first level appears as columns in dynamo. When calling the snippet "body" is mandatory key*/
+                    "body": { /*The first level appears as columns in dynamo. Kye "body" is mandatory key for snippet to work.*/
                         "primaryKey": [
                             "primaryKeyAnchor"
                         ], /*Capitalise: type#. End with #.*/
@@ -14,8 +14,8 @@
                         ], /*Capitalise: language#versions#objectMotivation#identifier*/
                         "titleStandard": [
                             "titleStandardAnchor"
-                        ], /*primaryLanguage title, spaces and special chars replaced by "_", lower, ascii*/
-                        "details": { /*mandatory, use snippet markdown.json to generate string and select appropriate values. these values are used to generate primary key, sort key title standard and isPartOf.*/
+                        ], /*primaryLanguage title; spaces and special chars replaced by "_", lower, ascii*/
+                        "details": { /*Details used to generate primary key, sort key titleStandard.*/
                             "detailsKeyAnchor": [
                                 "detailsValueAnchor"
                             ],
@@ -42,16 +42,16 @@
                             ],
                             "rightsholder": [
                                 "$17"
-                            ], /**/
+                            ], /*"hylmarj" or "vsb", technical name. Subsidiares or reference matter use another names versions.
                             "license": [
                                 "$18"
                             ], /**/
                             "owner": [
                                 "$19"
-                            ], /*HylmarJ*/
+                            ], /*"hylmarj" or "vsb", technical name.  Subsidiares or reference matter use another names versions.*/
                             "creator": [
                                 "$20"
-                            ] /*Jiří Hylmar*/
+                            ]  /*"hylmarj" or "vsb", technical name.  Subsidiares or reference matter use another names versions.*/
                         },
                         "about": {
                             "aboutGroupAnchor": [
@@ -96,26 +96,26 @@
                             "description": [
                                 {
                                     "value": [
-                                        "xxx"
+                                        "$51"
                                     ],
                                     "language": [
-                                        "xxx"
+                                        "$52"
                                     ],
                                     "versions": [
-                                        "xxx"
+                                        "$53"
                                     ] /*usually fullVersion or shortVersion. can be extended.*/
                                 }
                             ],
                             "titleNameSpace": [
                                 {
                                     "value": [
-                                        "xxx"
+                                        "$61"
                                     ],
                                     "language": [
-                                        "xxx"
+                                        "$62"
                                     ],
                                     "versions": [
-                                        "xxx"
+                                        "$63"
                                     ] /*usually fullVersion or shortVersion. can be extended.*/
                                 }
                             ]
@@ -124,32 +124,32 @@
                             "relationsKeyAnchor": [
                                 "relationsValueAnchor"
                             ],
-                            "versions": [
-                                "$70"
-                            ], /**/
-                            "typesObjectDeliveryFormats": [
+                            "format": [
                                 "71"
-                            ], /**/
-                            "typesObjectDeliveryFormatsFlavours": [
+                            ], /*Format shall be always evaluated with formatFlavours. in some cases a format stand alone can not provide unambiguous definition of the resource. Html formats are typical examples. Word document with inner stylings, toc etc. another.*/
+                            "formatFlavours": [
                                 "$72"
-                            ], /*Based on the typeObjectDeliveryFormats there some flavours that vary accourting to need and type of document. Confortable view and search.*/
+                            ], /*Based on the format there are some flavours that vary accourting to need and type of document.*/
                             "hasFormat": [
                                 "$73"
-                            ],
+                            ],/*If the resource has another formats, list them with format. formatFlavour is considered to be transfered automatically.*/
                             "isFormatOf": [
                                 "$74"
-                            ],
-                            "hasPart": [
-                                "$75"
-                            ],
-                            "isPartOf": [
-                                "$76"
-                            ],
+                            ],/*Resource listed in hasFormats of pre=existing resource have this filled with format of pre-existing resource. Do not fill for primary resource. .mmd has format .png, .svg etc*/
+                            "versions": [
+                                "$70"
+                            ], /*Simillar use as "format", but "version" != "format"*/
                             "hasVersion": [
                                 "$77"
                             ],
                             "isVersionOf": [
                                 "$78"
+                            ],
+                            "hasPart": [
+                                "$75"
+                            ],/*Used for situation in which a part of resource does not make good sense. If parts exist this shall shall be  reffered in titleStandard of such resources.*/
+                            "isPartOf": [
+                                "$76"
                             ]
                         },
                         "locations": {
@@ -161,7 +161,7 @@
                             "s3": {
                                 "typeEnvironmentService": [
                                     "$80"
-                                ], /*s3, quicksight*/
+                                ], /*s3 have kind of specific structures and they ought to be respected individually. The same is for dynamoDB etc. So locations are defined for core environement services individually.*/
                                 "account": [
                                     "$81"
                                 ], /*182059100462*/
@@ -296,7 +296,7 @@
                                     "attachmentsGroupValueAnchor"
                                 ]
                             }
-                        }
+                        } /*Subsidiares or reference matters, parts of Dashboards, Multiple purpose section.*/
                     }
                 }
             ]
