@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc", /*https://code.visualstudio.com/docs/languages/json. Shecma content is CAMEL-CASE ONLY. Groups at the second level become dynamoDb columns*/
     "type": "object",
     "properties": {
-        "maskMedia": {
+        "danseDataCatalogueMaskDefault": {
             "defaultSnippets": [
                 {
                     "body": { /*the first level appears as columns in dynamo. When calling the snippet "body" is mandatory key*/
@@ -134,7 +134,7 @@
                                 "xxx"
                             ], /**/
                             "typesObjectDeliveryFormatsFlavours": [
-                                "xxx"
+                                "${1|typeObjectDeliveryFormats vocabulary:,\"expression\",\"geospatial\",htmlDocument,jsonSchema,pageMap,pdfDocument,presentationRSlides,productSheet,setData,setMetadata,template,widgetHtmlDataTable,widgetHtmlGraphDygraph,widgetHtmlGraphMermaid,widgetHtmlNews,widgetHtmltableMarkdown,widgetHtmltable,wordDocument,grapfMermaid|}"
                             ], /*Based on the typeObjectDeliveryFormats there some flavours that vary accourting to need and type of document. Confortable view and search.*/
                             "hasFormat": [
                                 "xxx"
