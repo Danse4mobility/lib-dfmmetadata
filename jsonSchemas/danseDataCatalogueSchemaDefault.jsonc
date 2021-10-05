@@ -20,40 +20,37 @@
                                 "detailsValueAnchor"
                             ],
                             "runners": [
-                                "xxx"
+                                "$10"
                             ], /*Define runner nospecial char. libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
                             "type": [
-                                "xxx"
+                                "$11"
                             ], /*type from DCMI namespace. No other types allowed.*/
                             "language": [
-                                "xxx"
-                            ], /*used to source about*/
+                                "$12"
+                            ], /*master language used to source about*/
                             "objectMotivations": [
-                                "xxx"
+                                "$13"
                             ], /*controlled vocabulary*/
                             "accrualMethod": [
-                                "xxx"
-                            ], /**/
-                            "rightsholder": [
-                                "xxx"
-                            ], /**/
-                            "license": [
-                                "xxx"
-                            ], /**/
-                            "licensePublic": [
-                                false
-                            ], /**/
+                                "$14"
+                            ], /**/                            
                             "identifier": [
-                                "xxx" /*hid if it does not exist*/
+                                "$15" /*hid if it does not exist*/
                             ],
                             "format": [
-                                "xxx" /**/
+                                "$16" /**/
                             ],
+                            "rightsholder": [
+                                "$17"
+                            ], /**/
+                            "license": [
+                                "$18"
+                            ], /**/
                             "owner": [
-                                "xxx"
+                                "$19"
                             ], /*HylmarJ*/
                             "creator": [
-                                "xxx"
+                                "$20"
                             ] /*Jiří Hylmar*/
                         },
                         "about": {
@@ -73,26 +70,26 @@
                             "title": [
                                 {
                                     "value": [
-                                        "xxx"
+                                        "$30"
                                     ],
                                     "language": [
-                                        "xxx"
+                                        "$31"
                                     ],
                                     "versions": [
-                                        "xxx"
+                                        "$32"
                                     ] /*usually fullVersion or shortVersion. can be extended.*/
                                 }
                             ],
                             "subtitle": [
                                 {
                                     "value": [
-                                        "xxx"
+                                        "$40"
                                     ],
                                     "language": [
-                                        "xxx"
+                                        "$41"
                                     ],
                                     "versions": [
-                                        "xxx"
+                                        "$42"
                                     ] /*usually fullVersion or shortVersion. can be extended.*/
                                 }
                             ],
@@ -128,31 +125,31 @@
                                 "relationsValueAnchor"
                             ],
                             "versions": [
-                                "xxx"
+                                "$70"
                             ], /**/
                             "typesObjectDeliveryFormats": [
-                                "xxx"
+                                "71"
                             ], /**/
                             "typesObjectDeliveryFormatsFlavours": [
-                                "${1|typeObjectDeliveryFormats vocabulary:,\"expression\",\"geospatial\",htmlDocument,jsonSchema,pageMap,pdfDocument,presentationRSlides,productSheet,setData,setMetadata,template,widgetHtmlDataTable,widgetHtmlGraphDygraph,widgetHtmlGraphMermaid,widgetHtmlNews,widgetHtmltableMarkdown,widgetHtmltable,wordDocument,grapfMermaid|}"
+                                "$72"
                             ], /*Based on the typeObjectDeliveryFormats there some flavours that vary accourting to need and type of document. Confortable view and search.*/
                             "hasFormat": [
-                                "xxx"
+                                "$73"
                             ],
                             "isFormatOf": [
-                                "xxx"
+                                "$74"
                             ],
                             "hasPart": [
-                                "xxx"
+                                "$75"
                             ],
                             "isPartOf": [
-                                "xxx"
+                                "$76"
                             ],
                             "hasVersion": [
-                                "xxx"
+                                "$77"
                             ],
                             "isVersionOf": [
-                                "xxx"
+                                "$78"
                             ]
                         },
                         "locations": {
@@ -163,56 +160,56 @@
                             },
                             "s3": {
                                 "typeEnvironmentService": [
-                                    "xxx"
+                                    "$80"
                                 ], /*s3, quicksight*/
                                 "account": [
-                                    "xxx"
+                                    "$81"
                                 ], /*182059100462*/
                                 "bucket": [
-                                    "xxx"
+                                    "$82"
                                 ], /*vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462*/
                                 "key": [
-                                    "xxx"
+                                    "$83"
                                 ], /*key is everything except bucket name*/
                                 "logicKey": [
-                                    "xxx"
+                                    "$84"
                                 ], /*"documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3"*/
                                 "projectKey": [
-                                    "xxx"
+                                    "$85"
                                 ], /*"template___internal___3b80283b-fc27-4489-8b54-8c87c6136997"*/
                                 "basename": [
-                                    "xxx"
+                                    "$86"
                                 ] /*"titleStandard___4cc17f36-501e-4ff7-8485-a348c635db18.html" see difference to nameSpaceReadable*/
                             }
                         },
-                        "publish": [
+                        "publishing": [
                             {
-                                "publishNameSpaceTypeKeyAnchor": [
-                                    "publishNameSpaceTypeValueAnchor"
+                                "publishingNameSpaceTypeKeyAnchor": [
+                                    "publishingNameSpaceTypeValueAnchor"
                                 ], /*relative or absolute*/
-                                "publishNameSpaceDestinationKeyAnchor": [
-                                    "publishNameSpaceDestinationValueAnchor"
+                                "publishingNameSpaceDestinationKeyAnchor": [
+                                    "publishingNameSpaceDestinationValueAnchor"
                                 ], /*app, doc*/
-                                "publishValueKeyAnchor": [
-                                    "publishNValueValueAnchor"
+                                "publishingValueKeyAnchor": [
+                                    "publishingNValueValueAnchor"
                                 ], /*this will become '/en/documentation/internal/+titleNameSpace' to be published under particula domain(s)*/
-                                "publishNameSpaceIsDefaultKeyAnchor": [
+                                "publishingNameSpaceIsDefaultBooleanAnchor": [
                                     false
                                 ] /*lab_danse_tech*/
                             },
                             {
                                 "nameSpaceType": [
-                                    "xxx"
+                                    "$90"
                                 ], /*relative or absolute*/
                                 "nameSpaceDestination": [
-                                    "xxx"
+                                    "$91"
                                 ], /*app, doc*/
                                 "value": [
-                                    "xxx"
+                                    "$92"
                                 ], /*this will become '/en/documentation/internal/+titleNameSpace' to be published under particula domain(s)*/
                                 "nameSpaceIsDefault": [
-                                    true
-                                ] /*lab_danse_tech*/
+                                    "$93"
+                                ] /*boolean*/
                             }
                         ],
                         "keywords": [
@@ -226,16 +223,19 @@
                             },
                             {
                                 "value": [
-                                    "xxx"
+                                    "$100"
                                 ],
                                 "language": [
-                                    "xxx"
+                                    "$101"
                                 ]
                             }
                         ],
                         "tags": [
                             {
                                 "tagsKeyAnchor": "tagsValueAnchor" /*value*/
+                            },
+                            {
+                                "$200": "$201" /*value*/
                             }
                         ],
                         "dates": {
@@ -243,17 +243,59 @@
                                 "datesValueAnchor"
                             ],
                             "created": [
-                                "xxx"
+                                "$300"
                             ],
                             "updated": [
-                                "xxx"
+                                "$301"
                             ],
                             "validFrom": [
-                                "xxx"
+                                "$302"
                             ],
                             "validTo": [
-                                "xxx"
+                                "$303"
                             ] /*dateTime ISO 8601 UTC zone 2020-06-01T10:40:19.283Z*/
+                        },
+                        "sustainability": {
+                            "sustainabilityBooleanAnchor": [
+                                false
+                            ],
+                            "isLockedForEditing": [
+                                "$400"
+                            ],
+                            "isInitiated": [
+                                "$401"
+                            ], /*if true, object needs to be loaded and updated, else rewrite from template possible*/
+                            "isLicensePublic": [
+                                "$402"
+                            ] /*if true, consider continuity*/
+                        },
+                        "transformations": {
+                            "transformationsGroupAnchor": {
+                                "transformationsGroupKeyAnchor": [
+                                    "transformationsGroupValueAnchor"
+                                ]
+                            },
+                            "sally": {
+                                "typeEnvironmentService": [
+                                    "$500"
+                                ], /*fileSystem*/
+                                "path": [
+                                    "$501"
+                                ],
+                                "modify": [
+                                    "$502"
+                                ],
+                                "size": [
+                                    "$503"
+                                ]
+                            }
+                        },
+                        "attachments": {
+                            "attachmentsGroupAnchor": {
+                                "attachmentsGroupKeyAnchor": [
+                                    "attachmentsGroupValueAnchor"
+                                ]
+                            }
                         }
                     }
                 }
