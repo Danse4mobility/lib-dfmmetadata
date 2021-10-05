@@ -147,7 +147,7 @@
                             ],
                             "hasPart": [
                                 "$75"
-                            ],/*Used for situation in which a part of resource does not make good sense. If parts exist this shall shall be  reffered in titleStandard of such resources.*/
+                            ],/*Used for situation in which a part of resource does not make good sense. If parts exist this shall shall be reflected in titleStandard of such resources. Has part is not used in context of legend previews, etc. see attachements section.*/
                             "isPartOf": [
                                 "$76"
                             ]
@@ -296,7 +296,7 @@
                                     "attachmentsGroupValueAnchor"
                                 ]
                             }
-                        } /*Subsidiares or reference matters, parts of Dashboards, Multiple purpose section.*/
+                        } /*Subsidiares or reference matters; parts of Dashboards; exif; qr codes; legends; previews; multiple purpose section.*/
                     }
                 }
             ]
