@@ -1,164 +1,260 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.jsonc",/*https://code.visualstudio.com/docs/languages/json*/
+    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/mediaSchemaMask.jsonc", /*https://code.visualstudio.com/docs/languages/json. Shecma content is CAMEL-CASE ONLY. Groups at the second level become dynamoDb columns*/
     "type": "object",
     "properties": {
         "maskMedia": {
             "defaultSnippets": [
                 {
-                    "body": {/*the first level appears as columns in dynamo*/
+                    "body": { /*the first level appears as columns in dynamo*/
                         "primaryKey": [
-                            "xxx"
-                        ],/*capitalise typesObject# end with #*/
+                            "primaryKeyAnchor"
+                        ], /*Capitalise: type#. End with #.*/
                         "sortKey": [
-                            "xxx"
-                        ],/*Capitalise: languagePrimary#authoriseAccount#objectMotivation#hashId*/
+                            "sortKeyAnchor"
+                        ], /*Capitalise: language#versions#objectMotivation#identifier*/
                         "titleStandard": [
-                            "xxx"
-                        ],/*primaryLanguage title, spaces and special chars replaced by "_", lower, ascii*/
-                        "isPartOf":[
-                            "xxx"
-                        ],/*identifier of collection. if no collection leave blank.*/
-                        "details": {/*mandatory, use snippet markdown.json to generate string and select appropriate values. these values are used to generate primary key, sort key title standard and isPartOf.*/
+                            "titleStandardAnchor"
+                        ], /*primaryLanguage title, spaces and special chars replaced by "_", lower, ascii*/
+                        "details": { /*mandatory, use snippet markdown.json to generate string and select appropriate values. these values are used to generate primary key, sort key title standard and isPartOf.*/
+                            "detailsKeyAnchor": [
+                                "detailsValueAnchor"
+                            ],
                             "runners": [
                                 "xxx"
-                            ],/*Define runner nospecial char. libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
+                            ], /*Define runner nospecial char. libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
+                            "type": [
+                                "xxx"
+                            ], /*type from DCMI namespace. No other types allowed.*/
                             "language": [
                                 "xxx"
-                            ],/*used to source about*/
-                            "accessRights": [
-                                "xxx"
-                            ],/**/
+                            ], /*used to source about*/
                             "objectMotivations": [
                                 "xxx"
-                            ],/*controlled vocabulary*/
+                            ], /*controlled vocabulary*/
                             "accrualMethod": [
                                 "xxx"
-                            ],/**/
+                            ], /**/
                             "rightsholder": [
                                 "xxx"
-                            ],/**/
+                            ], /**/
                             "license": [
                                 "xxx"
-                            ],/**/
-                            "typesObject": [
-                                "xxx"
-                            ],/**/
-                            "typesObjectDeliveryFormats": [
-                                "xxx"
-                            ],/**/
-                            "typesObjectDeliveryFormatsFlavours": [
-                                "xxx"
-                            ],/*Based on the typeObjectDeliveryFormats there some flavours that vary accourting to need and type of document. Confortable view and search.*/
-                            "identifier": [
-                                "xxx"/*hid if it does not exist*/
-                            ],
-                            "extension": [
-                                "xxx"/**/
-                            ]
-                        },
-                        "about": {
-                            "title": [
-                                "xxx"
-                            ],/*from titleFull. and language*/
-                            "subtitle": [
-                                "xxx"
-                            ],/*composed of translated sortKey*/
-                            "description": [
-                                "xxx"
-                            ],/*from descriptionFullCs. and language*/
-                            "owner": [
-                                "xxx"
-                            ],/*HylmarJ*/
-                            "creator": [
-                                "xxx"
-                            ],/*Jiří Hylmar*/
+                            ], /**/
                             "licensePublic": [
                                 false
-                            ],/**/
-                            "titleFullCs": [
+                            ], /**/
+                            "identifier": [
+                                "xxx" /*hid if it does not exist*/
+                            ],
+                            "format": [
+                                "xxx" /**/
+                            ],
+                            "owner": [
                                 "xxx"
-                            ],/*Šablona generování stránek*/
-                            "titleFullEn": [
+                            ], /*HylmarJ*/
+                            "creator": [
                                 "xxx"
-                            ],/*Template for pages rendering*/
-                            "titleShortCs": [
+                            ] /*Jiří Hylmar*/
+                        },
+                        "about": {
+                            "aboutGroupAnchor": [
+                                {
+                                    "aboutGroupValueKeyAnchor": [
+                                        "aboutGroupValueValueAnchor"
+                                    ],
+                                    "aboutGroupLanguageKeyAnchor": [
+                                        "aboutGroupLanguageValueAnchor"
+                                    ],
+                                    "aboutGroupVersionsKeyAnchor": [
+                                        "aboutGroupVersionsValueAnchor"
+                                    ]/*usually fullVersion or shortVersion. can be extended.*/
+                                }
+                            ],
+                            "title": [
+                                {
+                                    "value": [
+                                        "xxx"
+                                    ],
+                                    "language": [
+                                        "xxx"
+                                    ],
+                                    "versions": [
+                                        "xxx"
+                                    ]/*usually fullVersion or shortVersion. can be extended.*/
+                                }
+                            ],
+                            "subtitle": [
+                                {
+                                    "value": [
+                                        "xxx"
+                                    ],
+                                    "language": [
+                                        "xxx"
+                                    ],
+                                    "versions": [
+                                        "xxx"
+                                    ]/*usually fullVersion or shortVersion. can be extended.*/
+                                }
+                            ],
+                            "description": [
+                                {
+                                    "value": [
+                                        "xxx"
+                                    ],
+                                    "language": [
+                                        "xxx"
+                                    ],
+                                    "versions": [
+                                        "xxx"
+                                    ]/*usually fullVersion or shortVersion. can be extended.*/
+                                }
+                            ],
+                            "titleNameSpace": [
+                                {
+                                    "value": [
+                                        "xxx"
+                                    ],
+                                    "language": [
+                                        "xxx"
+                                    ],
+                                    "versions": [
+                                        "xxx"
+                                    ]/*usually fullVersion or shortVersion. can be extended.*/
+                                }
+                            ]
+                        },
+                        "relations": {
+                            "relationsKeyAnchor": [
+                                "relationsValueAnchor"
+                            ],
+                            "versions": [
                                 "xxx"
-                            ],/*Šablona generování stránek*/
-                            "titleShortEn": [
+                            ], /**/
+                            "typesObjectDeliveryFormats": [
                                 "xxx"
-                            ],/*Template for pages rendering*/
-                            "descriptionFullCs": [
+                            ], /**/
+                            "typesObjectDeliveryFormatsFlavours": [
                                 "xxx"
-                            ],/*Toto je popis výstupu šablony, nikoliv kódu. Na základě vstupů `render.json` a podpůrných souborů vygeneruje objekt typu stránka.*/
-                            "descriptionFullEn": [
+                            ], /*Based on the typeObjectDeliveryFormats there some flavours that vary accourting to need and type of document. Confortable view and search.*/
+                            "hasFormat": [
                                 "xxx"
-                            ],/*This is a description of the template output, not the code. It generates a page object based on `render.json` inputs and supporting files.*/
-                            "descriptionShortCs": [
+                            ],
+                            "isFormatOf": [
                                 "xxx"
-                            ],/*Popis výstupu šablony. `render.json`*/
-                            "descriptionShortEn": [
+                            ],
+                            "hasPart": [
                                 "xxx"
-                            ],/*Description of the template output. `render.json`*/
-                            "keywordsCs": [
+                            ],
+                            "isPartOf": [
                                 "xxx"
-                            ],/**/
-                            "keywordsEn": [
+                            ],
+                            "hasVersion": [
                                 "xxx"
-                            ]/**/
+                            ],
+                            "isVersionOf": [
+                                "xxx"
+                            ]
                         },
                         "locations": {
-                            "s3":{
+                            "locationsGroupAnchor": {
+                                "locationsGroupKeyAnchor": [
+                                    "locationsGroupValueAnchor"
+                                ]
+                            },
+                            "s3": {
                                 "typeEnvironmentService": [
                                     "xxx"
-                                ],/*s3, quicksight*/
+                                ], /*s3, quicksight*/
                                 "account": [
                                     "xxx"
-                                ],/*182059100462*/
+                                ], /*182059100462*/
                                 "bucket": [
                                     "xxx"
-                                ],/*vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462*/
+                                ], /*vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462*/
                                 "key": [
                                     "xxx"
-                                ],/*key is everything except bucket name*/
-                                "keys": [
+                                ], /*key is everything except bucket name*/
+                                "logicKey": [
                                     "xxx"
-                                ],/*"documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3", "template___internal___3b80283b-fc27-4489-8b54-8c87c6136997","rdmformats__html_clean__toc","technical___name.html"*/
+                                ], /*"documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3"*/
+                                "projectKey": [
+                                    "xxx"
+                                ], /*"template___internal___3b80283b-fc27-4489-8b54-8c87c6136997"*/
                                 "basename": [
                                     "xxx"
-                                ]/*template_clean.html name human readable, intuitive*/    
-                            }                            
-                        },                        
-                        "publishing": {
-                            "nameSpaceType": [
-                                "xxx"
-                            ],/*TODO ? relative*/
-                            "nameSpaceDestination": [
-                                "xxx"
-                            ],/*app, doc*/
-                            "nameSpaceValue": [
-                                "xxx"
-                            ],/*this will become '/en/documentation/internal/template.html' to be published under particula domain(s)*/
-                            "publishDefault": [
-                                "xxx"
-                            ]/*lab_danse_tech*/
+                                ] /*"titleStandard___4cc17f36-501e-4ff7-8485-a348c635db18.html" see difference to nameSpaceReadable*/
+                            }
                         },
-                        "tags": [
+                        "publish": [
                             {
-                                "xxx": "xxx"/*value*/
+                                "publishNameSpaceTypeKeyAnchor": [
+                                    "publishNameSpaceTypeValueAnchor"
+                                ], /*relative or absolute*/
+                                "publishNameSpaceDestinationKeyAnchor": [
+                                    "publishNameSpaceDestinationValueAnchor"
+                                ], /*app, doc*/
+                                "publishValueKeyAnchor": [
+                                    "publishNValueValueAnchor"
+                                ], /*this will become '/en/documentation/internal/+titleNameSpace' to be published under particula domain(s)*/
+                                "publishNameSpaceIsDefaultKeyAnchor": [
+                                    false
+                                ] /*lab_danse_tech*/
+                            },
+                            {
+                                "nameSpaceType": [
+                                    "xxx"
+                                ], /*relative or absolute*/
+                                "nameSpaceDestination": [
+                                    "xxx"
+                                ], /*app, doc*/
+                                "value": [
+                                    "xxx"
+                                ], /*this will become '/en/documentation/internal/+titleNameSpace' to be published under particula domain(s)*/
+                                "nameSpaceIsDefault": [
+                                    true
+                                ] /*lab_danse_tech*/
+                            }                            
+                        ],
+                        "keywords": [
+                            {
+                                "keywordsValueKeyAnchor": [
+                                    "keywordsValueValueAnchor"
+                                ],
+                                "keywordsLanguageKeyAnchor": [
+                                    "keywordsLanguageValueAnchor"
+                                ]
+                            },
+                            {
+                                "value": [
+                                    "xxx"
+                                ],
+                                "language": [
+                                    "xxx"
+                                ]
                             }
                         ],
-                        "dateCreated": [
-                            "xxx"
+                        "tags": [
+                            {
+                                "tagsKeyAnchor": "tagsValueAnchor" /*value*/
+                            }
                         ],
-                        "dateUpdated": [
-                            "xxx"
-                        ],
-                        "validitFrom": [
-                            "xxx"
-                        ],
-                        "validitTo": [
-                            "xxx"
-                        ]/*dateTime ISO 8601 UTC zone 2020-06-01T10:40:19.283Z*/
+                        "dates": {
+                            "datesKeyAnchor": [
+                                "datesValueAnchor"
+                            ],
+                            "created": [
+                                "xxx"
+                            ],
+                            "updated": [
+                                "xxx"
+                            ],
+                            "validFrom": [
+                                "xxx"
+                            ],
+                            "validTo": [
+                                "xxx"
+                            ] /*dateTime ISO 8601 UTC zone 2020-06-01T10:40:19.283Z*/
+                        }
                     }
                 }
             ]

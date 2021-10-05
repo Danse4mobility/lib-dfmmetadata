@@ -1,25 +1,25 @@
 {
     "body": {
         "primaryKey": [
-            "xxx"
+            "primaryKeyAnchor"
         ],
         "sortKey": [
-            "xxx"
+            "sortKeyAnchor"
         ],
         "titleStandard": [
-            "xxx"
-        ],
-        "isPartOf": [
-            "xxx"
+            "titleStandardAnchor"
         ],
         "details": {
+            "detailsKeyAnchor": [
+                "detailsValueAnchor"
+            ],
             "runners": [
                 "xxx"
             ],
-            "language": [
+            "type": [
                 "xxx"
             ],
-            "accessRights": [
+            "language": [
                 "xxx"
             ],
             "objectMotivations": [
@@ -34,7 +34,94 @@
             "license": [
                 "xxx"
             ],
-            "typesObject": [
+            "licensePublic": [
+                false
+            ],
+            "identifier": [
+                "xxx"
+            ],
+            "format": [
+                "xxx"
+            ],
+            "owner": [
+                "xxx"
+            ],
+            "creator": [
+                "xxx"
+            ]
+        },
+        "about": {
+            "aboutGroupAnchor": [
+                {
+                    "aboutGroupValueKeyAnchor": [
+                        "aboutGroupValueValueAnchor"
+                    ],
+                    "aboutGroupLanguageKeyAnchor": [
+                        "aboutGroupLanguageValueAnchor"
+                    ],
+                    "aboutGroupVersionsKeyAnchor": [
+                        "aboutGroupVersionsValueAnchor"
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "value": [
+                        "xxx"
+                    ],
+                    "language": [
+                        "xxx"
+                    ],
+                    "versions": [
+                        "xxx"
+                    ]
+                }
+            ],
+            "subtitle": [
+                {
+                    "value": [
+                        "xxx"
+                    ],
+                    "language": [
+                        "xxx"
+                    ],
+                    "versions": [
+                        "xxx"
+                    ]
+                }
+            ],
+            "description": [
+                {
+                    "value": [
+                        "xxx"
+                    ],
+                    "language": [
+                        "xxx"
+                    ],
+                    "versions": [
+                        "xxx"
+                    ]
+                }
+            ],
+            "titleNameSpace": [
+                {
+                    "value": [
+                        "xxx"
+                    ],
+                    "language": [
+                        "xxx"
+                    ],
+                    "versions": [
+                        "xxx"
+                    ]
+                }
+            ]
+        },
+        "relations": {
+            "relationsKeyAnchor": [
+                "relationsValueAnchor"
+            ],
+            "versions": [
                 "xxx"
             ],
             "typesObjectDeliveryFormats": [
@@ -43,64 +130,31 @@
             "typesObjectDeliveryFormatsFlavours": [
                 "xxx"
             ],
-            "identifier": [
+            "hasFormat": [
                 "xxx"
             ],
-            "extension": [
-                "xxx"
-            ]
-        },
-        "about": {
-            "title": [
+            "isFormatOf": [
                 "xxx"
             ],
-            "subtitle": [
+            "hasPart": [
                 "xxx"
             ],
-            "description": [
+            "isPartOf": [
                 "xxx"
             ],
-            "owner": [
+            "hasVersion": [
                 "xxx"
             ],
-            "creator": [
-                "xxx"
-            ],
-            "licensePublic": [
-                false
-            ],
-            "titleFullCs": [
-                "xxx"
-            ],
-            "titleFullEn": [
-                "xxx"
-            ],
-            "titleShortCs": [
-                "xxx"
-            ],
-            "titleShortEn": [
-                "xxx"
-            ],
-            "descriptionFullCs": [
-                "xxx"
-            ],
-            "descriptionFullEn": [
-                "xxx"
-            ],
-            "descriptionShortCs": [
-                "xxx"
-            ],
-            "descriptionShortEn": [
-                "xxx"
-            ],
-            "keywordsCs": [
-                "xxx"
-            ],
-            "keywordsEn": [
+            "isVersionOf": [
                 "xxx"
             ]
         },
         "locations": {
+            "locationsGroupAnchor": {
+                "locationsGroupKeyAnchor": [
+                    "locationsGroupValueAnchor"
+                ]
+            },
             "s3": {
                 "typeEnvironmentService": [
                     "xxx"
@@ -114,7 +168,10 @@
                 "key": [
                     "xxx"
                 ],
-                "keys": [
+                "logicKey": [
+                    "xxx"
+                ],
+                "projectKey": [
                     "xxx"
                 ],
                 "basename": [
@@ -122,36 +179,75 @@
                 ]
             }
         },
-        "publishing": {
-            "nameSpaceType": [
-                "xxx"
-            ],
-            "nameSpaceDestination": [
-                "xxx"
-            ],
-            "nameSpaceValue": [
-                "xxx"
-            ],
-            "publishDefault": [
-                "xxx"
-            ]
-        },
-        "tags": [
+        "publish": [
             {
-                "xxx": "xxx"
+                "publishNameSpaceTypeKeyAnchor": [
+                    "publishNameSpaceTypeValueAnchor"
+                ],
+                "publishNameSpaceDestinationKeyAnchor": [
+                    "publishNameSpaceDestinationValueAnchor"
+                ],
+                "publishValueKeyAnchor": [
+                    "publishNValueValueAnchor"
+                ],
+                "publishNameSpaceIsDefaultKeyAnchor": [
+                    false
+                ]
+            },
+            {
+                "nameSpaceType": [
+                    "xxx"
+                ],
+                "nameSpaceDestination": [
+                    "xxx"
+                ],
+                "value": [
+                    "xxx"
+                ],
+                "nameSpaceIsDefault": [
+                    true
+                ]
             }
         ],
-        "dateCreated": [
-            "xxx"
+        "keywords": [
+            {
+                "keywordsValueKeyAnchor": [
+                    "keywordsValueValueAnchor"
+                ],
+                "keywordsLanguageKeyAnchor": [
+                    "keywordsLanguageValueAnchor"
+                ]
+            },
+            {
+                "value": [
+                    "xxx"
+                ],
+                "language": [
+                    "xxx"
+                ]
+            }
         ],
-        "dateUpdated": [
-            "xxx"
+        "tags": [
+            {
+                "tagsKeyAnchor": "tagsValueAnchor"
+            }
         ],
-        "validitFrom": [
-            "xxx"
-        ],
-        "validitTo": [
-            "xxx"
-        ]
+        "dates": {
+            "datesKeyAnchor": [
+                "datesValueAnchor"
+            ],
+            "created": [
+                "xxx"
+            ],
+            "updated": [
+                "xxx"
+            ],
+            "validFrom": [
+                "xxx"
+            ],
+            "validTo": [
+                "xxx"
+            ]
+        }
     }
 }
