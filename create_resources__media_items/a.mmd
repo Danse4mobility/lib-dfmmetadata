@@ -1,0 +1,21 @@
+%% create mermaid diagram and include it in the data catalog
+%% visit help pages https://mermaid-js.github.io/mermaid/#/
+graph TD
+
+0[use ./lib-dfmmetadata/snippetsCopy/mmd.json see README]
+A[create graph with temporary name like a.mmd]
+B[complete and save to local ./create_resources__media_items/a.mmd]
+C[generate with mmdc -i a.mmd -o a.svg -t dark]
+D[use snippet in md SYNTmermaidSchemaMask see README to generate string]
+E[input string as parameter in Rscript F.metadata.from.string.image.R STRING]
+F[metadata file-s will be created in folder where a.mmd and files renamed]
+
+0 --> A
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+
+click 0 "https://github.com/Danse4mobility/lib-dfmmetadata/blob/master/snippetsCopy/mmd.json" "This is a link"
+

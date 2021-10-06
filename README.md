@@ -1,30 +1,31 @@
-#'rstudioapi::getSourceEditorContext()$path
-#'whoami="~/ws/lib-dfmrender/README.md"
-#'owner="hylmarj"
 
-## lib-dfmrender
+## lib-dfmmetadata
 
-lib[rary]-[]d[anse]f[or]m[obiltiy]render[]
+lib[rary]-[]d[anse]f[or]m[obiltiy]metadata[]
 
 ### About me
 
-I provide templates and keep them in a single place. As of update 2021-10-01, I have no standalone functionality.
+I provide templates and keep them in a single place. I include functionalities to `create` and `organise` resources in `data catalog`
 
 I do following task.
 
-**A)** maintain [Media mask] `mediSchemaMask.jsonc` which is used to provide core structures for metadata of all objects
+**A)** maintain [Media mask] `danseDataCatalogueSchemaDefault.jsonc` which is used to provide core structures for metadata of all objects
 
-**B)** provide [Snippets template] `markdown.json` that includes snippet `SYNTmediaSchemaMask` for creating documentation and to help with the `mediaSchemaMask.json` completion in two steps i. create string, ii. use this string to create *.json metadata for given object
+**B)** provide [Snippets template] `markdown.json` that includes snippets `SYNT.*SchemaMask` for creating `metadata` and to help auto-fill `danseDataCatalogueSchemaDefault.json` In two steps i. create string, ii. use this string to create *.json metadata for given object.
 
-**C)** json metadata from string [Metadata from string]
+**C)** render mechanism for .mmd objects [Render diagram] with sync to s3 location.
 
-**D)** render mechanism for .mmd objects [Render diagram] with sync to s3 location.
+**D)** json metadata from string [Metadata from string]
 
-**E)** render mechanism for Rmarkdown documents [Render Rmarkdown documents]. **.gitignore** is set to `/scratch` so the documents rendered should be placed into this directory.
+**E)** method of using metadata in case of [Create manual snapshot]
+
+**F)** render mechanism for Rmarkdown documents [Render Rmarkdown documents]. **.gitignore** is set to `/scratch` so the documents rendered should be placed into this directory.
+
+**G)** json metadata from string [Synchronise to s3 method]
 
 #### Media mask
 
-replace comment regex \/\*.*\*\/
+Once `danseDataCatalogueSchemaDefault.jsonc` make copy `danseDataCatalogueSchemaDefault.json` and replace comment regex ` \/\*.*\*\/`. Save.
 
 #### Snippets template
 
@@ -47,6 +48,19 @@ cp ~/lib-dfmmetadata/snippetsCopy/markdown.json /mnt/c/Users/*username*/AppData/
 
 cp ~/lib-dfmmetadata/snippetsCopy/mmd.json /mnt/c/Users/*username*/AppData/Roaming/Code/User/snippets/mmd.json.code-snippets
 
+#### Render diagram
+
+**Prerequesties**
+
+- mermaid cli <a href='https://github.com/mermaid-js/mermaid-cli' target='_blank'><span style='font-family:Times;font-style: italic;font-size:0.8em;'>Learn more</span>.</a>. mmdc --help
+
+**use**
+
+mkdir -p ../create_resources__media_items/ && cd ../create_resources__media_items/ && \
+mmdc -i sourceFile.mmd \
+-o destinationFile.png \
+-t forest
+
 ### Metadata from string
 
 vscode wsl example
@@ -54,8 +68,8 @@ vscode wsl example
 once the file markdown.json is in place
 
 1. hitting `<CTRL-Space>` will trigger snippet options.
-2. start writing `synt..` and select option `SYNTmediaSchemaMask`, complete with `<Tab>`
-3. you will be prompted to fill in string
+2. start writing `synt..` and select option `SYNTmermaidSchemaMask`, complete with `<Tab>`
+3. you will be prompted to fill in string example
 
 ```
 runners define:
@@ -72,30 +86,13 @@ typesObjectDeliveryFormatsFlavours vocabulary:
 identifier define:
 format vocabulary:
 ```
-4. The string contains information key_value. Key is used to autopopulate metadata.json. In case you consider value offered in snippet as obsolete, give `xxx` option which is a part of offered menu.
+4. The string contains information key_value. Key is used to auto-populate `metadata`.json.
 
 5. created string is input of the function `F.metadata.attach.string.based.R`
 
-runners_libdfdmmetadata___title_Generate media object string with snippet helper___language_en___accessRights_intite___objectMotivations_help___accrualMethod_itemCreation___rightsHolder_vsb___license_copyright___typesObject_expression___typesObjectDeliveryFormats_xxx___typesObjectDeliveryFormatsFlavours_xxx___identifier_e760d5fb-542e-4e46-af57-3e9176f5f7b0___format_mmd
-
-
-#### Render diagram
-
-**Prerequesties**
-
-- mermaid cli <a href='https://github.com/mermaid-js/mermaid-cli' target='_blank'><span style='font-family:Times;font-style: italic;font-size:0.8em;'>Learn more</span>.</a>. mmdc --help
-
-**use**
-
-mkdir -p ../create_resources__media_items/ && cd ../create_resources__media_items/ && \
-mmdc -i sourceFile.mmd \
--o destinationFile.png \
--t forest
-
-aws s3 sync --profile default . s3://vsbcda-dandra-com-intite-sss-infdev-wfs-182059100462/06d91fc8-e7dd-40b9-ae5c-9fb8f5f71541__media_items/
+`runners_libdfdmmetadata___title_Generate media object string with snippet helper___language_en___accessRights_intite___objectMotivations_help___accrualMethod_itemCreation___rightsHolder_vsb___license_copyright___typesObject_expression___typesObjectDeliveryFormats_xxx___typesObjectDeliveryFormatsFlavours_xxx___identifier_e760d5fb-542e-4e46-af57-3e9176f5f7b0___format_mmd`
 
 #### Create manual snapshot
-
 
 #### Render Rmarkdown documents
 
@@ -109,12 +106,13 @@ Template to render rmarkdown parges in various html formats, word format and pdf
 
 run `Rscript F.render.sync.markdown.config.R 0`
 
+#### Synchronise to s3 method
+
+aws s3 sync --profile default . s3://vsbcda-dandra-com-intite-sss-infdev-wfs-182059100462/06d91fc8-e7dd-40b9-ae5c-9fb8f5f71541__media_items/
 
 ### TODO
 
-
 ### Consider
-
 
 ### Manipulate me
 

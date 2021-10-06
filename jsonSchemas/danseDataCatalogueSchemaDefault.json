@@ -1,57 +1,57 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc", /*https://code.visualstudio.com/docs/languages/json. Schema keys in CAMEL-CASE ONLY. DCMI namespace is primary system. Danse namespace secondary. Groups at the next level after "body" become dynamoDb columns*/
+    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc",
     "type": "object",
     "properties": {
         "danseDataCatalogueMaskDefault": {
             "defaultSnippets": [
                 {
-                    "body": { /*The first level appears as columns in dynamo. Kye "body" is mandatory key for snippet to work.*/
+                    "body": {
                         "primaryKey": [
                             "primaryKeyAnchor"
-                        ], /*Capitalise: type#. End with #.*/
+                        ],
                         "sortKey": [
                             "sortKeyAnchor"
-                        ], /*Capitalise: language#versions#objectMotivation#identifier*/
+                        ],
                         "titleStandard": [
                             "titleStandardAnchor"
-                        ], /*primaryLanguage title; spaces and special chars replaced by "_", lower, ascii*/
-                        "details": { /*Details used to generate primary key, sort key titleStandard.*/
+                        ],
+                        "details": {
                             "detailsKeyAnchor": [
                                 "detailsValueAnchor"
                             ],
                             "runners": [
                                 "$10"
-                            ], /*Define runner nospecial char. libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
+                            ],
                             "type": [
                                 "$11"
-                            ], /*type from DCMI namespace. No other types allowed.*/
+                            ],
                             "language": [
                                 "$12"
-                            ], /*master language used to source about*/
+                            ],
                             "objectMotivations": [
                                 "$13"
-                            ], /*controlled vocabulary*/
+                            ],
                             "accrualMethod": [
                                 "$14"
-                            ], /**/
+                            ],
                             "identifier": [
-                                "$15" /*hid if it does not exist*/
+                                "$15"
                             ],
                             "format": [
-                                "$16" /**/
+                                "$16"
                             ],
                             "rightsholder": [
                                 "$17"
-                            ], /*"hylmarj" or "vsb", technical name. Subsidiares or reference matter use another names versions.*/
+                            ],
                             "license": [
                                 "$18"
-                            ], /**/
+                            ],
                             "owner": [
                                 "$19"
-                            ], /*"hylmarj" or "vsb", technical name.  Subsidiares or reference matter use another names versions.*/
+                            ],
                             "creator": [
                                 "$20"
-                            ] /*"hylmarj" or "vsb", technical name.  Subsidiares or reference matter use another names versions.*/
+                            ]
                         },
                         "about": {
                             "aboutGroupAnchor": [
@@ -64,7 +64,7 @@
                                     ],
                                     "aboutGroupVersionsKeyAnchor": [
                                         "aboutGroupVersionsValueAnchor"
-                                    ] /*usually fullVersion or shortVersion. can be extended.*/
+                                    ]
                                 }
                             ],
                             "title": [
@@ -77,7 +77,7 @@
                                     ],
                                     "versions": [
                                         "$32"
-                                    ] /*usually fullVersion or shortVersion. can be extended.*/
+                                    ]
                                 }
                             ],
                             "subtitle": [
@@ -90,7 +90,7 @@
                                     ],
                                     "versions": [
                                         "$42"
-                                    ] /*usually fullVersion or shortVersion. can be extended.*/
+                                    ]
                                 }
                             ],
                             "description": [
@@ -103,7 +103,7 @@
                                     ],
                                     "versions": [
                                         "$53"
-                                    ] /*usually fullVersion or shortVersion. can be extended.*/
+                                    ]
                                 }
                             ],
                             "titleNameSpace": [
@@ -116,7 +116,7 @@
                                     ],
                                     "versions": [
                                         "$63"
-                                    ] /*usually fullVersion or shortVersion. can be extended.*/
+                                    ]
                                 }
                             ]
                         },
@@ -126,19 +126,19 @@
                             ],
                             "format": [
                                 "71"
-                            ], /*Format shall be always evaluated with formatFlavours. in some cases a format stand alone can not provide unambiguous definition of the resource. Html formats are typical examples. Word document with inner stylings, toc etc. another.*/
+                            ],
                             "formatFlavours": [
                                 "$72"
-                            ], /*Based on the format there are some flavours that vary accourting to need and type of document.*/
+                            ],
                             "hasFormat": [
                                 "$73"
-                            ], /*If the resource has another formats, list them with format. formatFlavour is considered to be transfered automatically.*/
+                            ],
                             "isFormatOf": [
                                 "$74"
-                            ], /*Resource listed in hasFormats of pre=existing resource have this filled with format of pre-existing resource. Do not fill for primary resource. .mmd has format .png, .svg etc*/
+                            ],
                             "versions": [
                                 "$70"
-                            ], /*Simillar use as "format", but "version" != "format"*/
+                            ],
                             "hasVersion": [
                                 "$77"
                             ],
@@ -147,7 +147,7 @@
                             ],
                             "hasPart": [
                                 "$75"
-                            ], /*Used for situation in which a part of resource does not make good sense. If parts exist this shall shall be reflected in titleStandard of such resources. Has part is not used in context of legend previews, etc. see attachements section.*/
+                            ],
                             "isPartOf": [
                                 "$76"
                             ]
@@ -161,55 +161,55 @@
                             "s3": {
                                 "typeEnvironmentService": [
                                     "$80"
-                                ], /*s3 have kind of specific structures and they ought to be respected individually. The same is for dynamoDB etc. So locations are defined for core environement services individually.*/
+                                ],
                                 "account": [
                                     "$81"
-                                ], /*182059100462*/
+                                ],
                                 "bucket": [
                                     "$82"
-                                ], /*vsbcda-dantec-com-intite-rst-infdev-s3e-182059100462*/
+                                ],
                                 "key": [
                                     "$83"
-                                ], /*key is everything except bucket name*/
+                                ],
                                 "logicKey": [
                                     "$84"
-                                ], /*"documentation___887244e4-0ab2-466b-a0e8-0a5cd71b9ab3"*/
+                                ],
                                 "projectKey": [
                                     "$85"
-                                ], /*"template___internal___3b80283b-fc27-4489-8b54-8c87c6136997"*/
+                                ],
                                 "basename": [
                                     "$86"
-                                ] /*"titleStandard___4cc17f36-501e-4ff7-8485-a348c635db18.html" see difference to nameSpaceReadable*/
+                                ]
                             }
                         },
                         "publishing": [
                             {
                                 "publishingNameSpaceTypeKeyAnchor": [
                                     "publishingNameSpaceTypeValueAnchor"
-                                ], /*relative or absolute*/
+                                ],
                                 "publishingNameSpaceDestinationKeyAnchor": [
                                     "publishingNameSpaceDestinationValueAnchor"
-                                ], /*app, doc*/
+                                ],
                                 "publishingValueKeyAnchor": [
                                     "publishingNValueValueAnchor"
-                                ], /*this will become '/en/documentation/internal/+titleNameSpace' to be published under particula domain(s)*/
+                                ],
                                 "publishingNameSpaceIsDefaultBooleanAnchor": [
                                     false
-                                ] /*lab_danse_tech*/
+                                ]
                             },
                             {
                                 "nameSpaceType": [
                                     "$90"
-                                ], /*relative or absolute*/
+                                ],
                                 "nameSpaceDestination": [
                                     "$91"
-                                ], /*app, doc*/
+                                ],
                                 "value": [
                                     "$92"
-                                ], /*this will become '/en/documentation/internal/+titleNameSpace' to be published under particula domain(s)*/
+                                ],
                                 "nameSpaceIsDefault": [
                                     "$93"
-                                ] /*boolean*/
+                                ]
                             }
                         ],
                         "keywords": [
@@ -232,10 +232,10 @@
                         ],
                         "tags": [
                             {
-                                "tagsKeyAnchor": "tagsValueAnchor" /*value*/
+                                "tagsKeyAnchor": "tagsValueAnchor"
                             },
                             {
-                                "$200": "$201" /*value*/
+                                "$200": "$201"
                             }
                         ],
                         "dates": {
@@ -253,7 +253,7 @@
                             ],
                             "validTo": [
                                 "$303"
-                            ] /*dateTime ISO 8601 UTC zone 2020-06-01T10:40:19.283Z*/
+                            ]
                         },
                         "sustainability": {
                             "sustainabilityBooleanAnchor": [
@@ -264,10 +264,10 @@
                             ],
                             "isInitiated": [
                                 "$401"
-                            ], /*if true, object needs to be loaded and updated, else rewrite from template possible*/
+                            ],
                             "isLicensePublic": [
                                 "$402"
-                            ] /*if true, consider continuity*/
+                            ]
                         },
                         "transformations": {
                             "transformationsGroupAnchor": {
@@ -278,7 +278,7 @@
                             "sally": {
                                 "typeEnvironmentService": [
                                     "$500"
-                                ], /*fileSystem*/
+                                ],
                                 "path": [
                                     "$501"
                                 ],
@@ -296,7 +296,7 @@
                                     "attachmentsGroupValueAnchor"
                                 ]
                             }
-                        } /*Subsidiares or reference matters; parts of Dashboards; exif; qr codes; legends; previews; multiple purpose section.*/
+                        }
                     }
                 }
             ]
