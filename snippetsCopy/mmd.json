@@ -1,0 +1,26 @@
+{
+	"workflowAtoG": {
+		"prefix": "workflowAtoG",
+		"body": [
+			"%% commet in mmd files",
+			"%% mermaid is Javascript based diagramming",
+			"%%",
+			"graph TD",
+			"0[use ./lib-dfmmetadata/snippetsCopy/mmd.json see readme]",
+			"A[1]",
+			"B[2]",
+			"C[3]",
+			"D[4]",
+			"E[5]",
+			"F[6]",
+			"G[7]",
+			"A --> B",
+			"B --> C",
+			"C --> D",
+			"D --> E",
+			"E --> F",
+			"F --> G",
+			"click 0 'https://eu-west-1.console.aws.amazon.com/glacier/home?region=eu-west-1#/vaults'"
+		]
+	}
+}

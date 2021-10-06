@@ -32,15 +32,20 @@ replace comment regex \/\*.*\*\/
 
 Copy from helper google sheet `HELP-META` <a href='https://docs.google.com/spreadsheets/d/1lX3IJQghVONkRTV5AROA427xJbExYvpBZZXGWEDBWlo/edit#gid=956920037' target='_blank'><span style='font-family:Times;font-style: italic;font-size:0.8em;'>Learn more</span></a> to `SYNTmediaSchemaMask` part of default snippets dir (vscode) /mnt/c/Users/jirih/AppData/Roaming/Code/User/snippets/markdown.json.
 
-Copy this json to this git repo
+Copy this json snippets to this repo
 
 cp /mnt/c/Users/jirih/AppData/Roaming/Code/User/snippets/markdown.json ~/lib-dfmmetadata/snippetsCopy/markdown.json
+
+cp /mnt/c/Users/jirih/AppData/Roaming/Code/User/snippets/mmd.json.code-snippets ~/lib-dfmmetadata/snippetsCopy/mmd.json
+
 
 **use**
 
 Users of vscode can use template markdown.json by (vscode wsl example)
 
 cp ~/lib-dfmmetadata/snippetsCopy/markdown.json /mnt/c/Users/*username*/AppData/Roaming/Code/User/snippets/markdown.json 
+
+cp ~/lib-dfmmetadata/snippetsCopy/mmd.json /mnt/c/Users/*username*/AppData/Roaming/Code/User/snippets/mmd.json.code-snippets
 
 ### Metadata from string
 

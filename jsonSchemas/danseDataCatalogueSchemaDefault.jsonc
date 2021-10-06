@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc", /*https://code.visualstudio.com/docs/languages/json. Schema keys in CAMEL-CASE ONLY. DCMI namespace is primary system. Danse namespace secondary. Groups at the naxt level after "body" become dynamoDb columns*/
+    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc", /*https://code.visualstudio.com/docs/languages/json. Schema keys in CAMEL-CASE ONLY. DCMI namespace is primary system. Danse namespace secondary. Groups at the next level after "body" become dynamoDb columns*/
     "type": "object",
     "properties": {
         "danseDataCatalogueMaskDefault": {
