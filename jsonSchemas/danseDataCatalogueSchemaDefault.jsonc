@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc", /*https://code.visualstudio.com/docs/languages/json. Schema keys in CAMEL-CASE ONLY. DCMI namespace is primary system. Danse namespace secondary. Groups at the next level after "body" become dynamoDb columns*/
+    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc", /*https://code.visualstudio.com/docs/languages/json. Schema keys in CAMEL-CASE ONLY. DCMI is primary system https://www.dublincore.org/resources/userguide/creating_metadata/. Danse namespace secondary. Groups at the next level after "body" become dynamoDb columns*/
     "type": "object",
     "properties": {
         "danseDataCatalogueMaskDefault": {
@@ -21,37 +21,41 @@
                             ],
                             "runners": [
                                 "$10"
-                            ], /*Define runner nospecial char. libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci*/
+                            ], /*Define runner nospecial char. libdfmmetadata ... git project reference. It lib-dfmmetadata > than libdfmmetadata. no space, lower, no spec char, asci. In fact a special type of creator property mentioned explicitly because of complex environment in which finding the source needed to modify or replicat the resource is not always easy to find.*/
                             "type": [
                                 "$11"
                             ], /*type from DCMI namespace. No other types allowed.*/
-                            "language": [
+                            "languagePrimary": [
                                 "$12"
-                            ], /*master language used to source about*/
-                            "objectMotivations": [
+                            ], /*master language used to source about.*/
+                            "language": [
                                 "$13"
-                            ], /*controlled vocabulary*/
-                            "accrualMethod": [
+                            ], /*If the content is in more than one language, the property should be repeated.*/
+                            "objectMotivations": [
                                 "$14"
-                            ], /**/
+                            ], /*controlled vocabulary*/
+                            
                             "identifier": [
-                                "$15" /*hid if it does not exist*/
+                                "$16" /*hid if it does not exist*/
                             ],
                             "format": [
-                                "$16" /**/
+                                "$17" /*Format shall be always evaluated with formatFlavours. in some cases a format stand alone can not provide unambiguous definition of the resource. Html formats are typical examples. Word document with inner stylings, toc etc. another.*/
                             ],
-                            "rightsholder": [
-                                "$17"
-                            ], /*"hylmarj" or "vsb", technical name. Subsidiares or reference matter use another names versions.*/
-                            "license": [
+                            "formatFlavours": [
                                 "$18"
-                            ], /**/
-                            "owner": [
+                            ], /*Based on the format there are some flavours that vary accourting to need and type of document.*/
+                            "rightsHolder": [
                                 "$19"
-                            ], /*"hylmarj" or "vsb", technical name.  Subsidiares or reference matter use another names versions.*/
+                            ], /*"hylmarj" or "vsb", technical name. Subsidiares or reference matter use another names versions. This property represents a relationship between the resource and a person or an organization owning or managing rights over this resource.*/
                             "creator": [
                                 "$20"
-                            ] /*"hylmarj" or "vsb", technical name.  Subsidiares or reference matter use another names versions.*/
+                            ], /*"hylmarj" or "vsb", technical name.  Subsidiares or reference matter use another names versions. The creator property represents a relationship between the resource and a person, an organization, or a service primarily responsible for making the content of a resource.*/
+                            "accrualMethod": [
+                                "$15"
+                            ], /*Resources described by this property have to be collections. We recommend to use values of formal or informal controlled vocabularies. See also accrualPolicy and accrualPeriodicity.*/
+                            "license": [
+                                "$21"
+                            ] /**/                            
                         },
                         "about": {
                             "aboutGroupAnchor": [
@@ -59,8 +63,8 @@
                                     "aboutGroupValueKeyAnchor": [
                                         "aboutGroupValueValueAnchor"
                                     ],
-                                    "aboutGroupLanguageKeyAnchor": [
-                                        "aboutGroupLanguageValueAnchor"
+                                    "aboutGroupLanguageVariantKeyAnchor": [
+                                        "aboutGroupLanguageVariantValueAnchor"
                                     ],
                                     "aboutGroupVersionsKeyAnchor": [
                                         "aboutGroupVersionsValueAnchor"
@@ -72,7 +76,7 @@
                                     "value": [
                                         "$30"
                                     ],
-                                    "language": [
+                                    "languageVariant": [
                                         "$31"
                                     ],
                                     "versions": [
@@ -85,12 +89,9 @@
                                     "value": [
                                         "$40"
                                     ],
-                                    "language": [
+                                    "languageVariant": [
                                         "$41"
-                                    ],
-                                    "versions": [
-                                        "$42"
-                                    ] /*usually fullVersion or shortVersion. can be extended.*/
+                                    ]
                                 }
                             ],
                             "description": [
@@ -98,7 +99,7 @@
                                     "value": [
                                         "$51"
                                     ],
-                                    "language": [
+                                    "languageVariant": [
                                         "$52"
                                     ],
                                     "versions": [
@@ -110,8 +111,8 @@
                                 {
                                     "value": [
                                         "$61"
-                                    ],
-                                    "language": [
+                                    ], /*TODO controlled vocabulary needed*/
+                                    "languageVariant": [
                                         "$62"
                                     ],
                                     "versions": [
@@ -124,12 +125,12 @@
                             "relationsKeyAnchor": [
                                 "relationsValueAnchor"
                             ],
-                            "format": [
-                                "71"
-                            ], /*Format shall be always evaluated with formatFlavours. in some cases a format stand alone can not provide unambiguous definition of the resource. Html formats are typical examples. Word document with inner stylings, toc etc. another.*/
-                            "formatFlavours": [
-                                "$72"
-                            ], /*Based on the format there are some flavours that vary accourting to need and type of document.*/
+                            "source": [
+                                "$70" /**/
+                            ],
+                            "relation": [
+                                "$71" /**/
+                            ],                            
                             "hasFormat": [
                                 "$73"
                             ], /*If the resource has another formats, list them with format. formatFlavour is considered to be transfered automatically.*/
@@ -217,7 +218,7 @@
                                 "keywordsValueKeyAnchor": [
                                     "keywordsValueValueAnchor"
                                 ],
-                                "keywordsLanguageKeyAnchor": [
+                                "keywordsLanguageVariantKeyAnchor": [
                                     "keywordsLanguageValueAnchor"
                                 ]
                             },
@@ -225,7 +226,7 @@
                                 "value": [
                                     "$100"
                                 ],
-                                "language": [
+                                "languageVariant": [
                                     "$101"
                                 ]
                             }

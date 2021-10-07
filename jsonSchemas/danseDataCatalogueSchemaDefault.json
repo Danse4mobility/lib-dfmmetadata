@@ -1,9 +1,3 @@
-{
-    "$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc",
-    "type": "object",
-    "properties": {
-        "danseDataCatalogueMaskDefault": {
-            "defaultSnippets": [
                 {
                     "body": {
                         "primaryKey": [
@@ -299,7 +293,3 @@
                         }
                     }
                 }
-            ]
-        }
-    }
-}
