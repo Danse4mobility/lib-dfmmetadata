@@ -27,7 +27,7 @@
                             ], /*type from DCMI namespace. No other types allowed.*/
                             "languagePrimary": [
                                 "$12"
-                            ], /*master language used to source about.*/
+                            ], /*master language used to source about, construct primary and sort keys.*/
                             "language": [
                                 "$13"
                             ], /*If the content is in more than one language, the property should be repeated.*/

@@ -1,0 +1,44 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Danse4mobility/lib-dfmmetadata/master/jsonSchemas/danseDataCatalogueSchemaDefault.jsonc", /*https://code.visualstudio.com/docs/languages/json. Schema keys in CAMEL-CASE ONLY. DCMI is primary system https://www.dublincore.org/resources/userguide/creating_metadata/. Danse namespace secondary. Groups at the next level after "body" become dynamoDb columns*/
+	"type": "object",
+	"properties": {
+		"danseDataCatalogueMaskDefault": {
+			"defaultSnippets": [
+				{
+					"body": { /*The first level appears as columns in dynamo. Kye "body" is mandatory key for snippet to work.*/
+						"primaryKey": [
+							"primaryKeyAnchor"
+						], /*Capitalise: type#. End with #.*/
+						"sortKey": [
+							"sortKeyAnchor"
+						], /*Capitalise: language#versions#objectMotivation#identifier*/
+						"titleStandard": [
+							"titleStandardAnchor"
+						], /*primaryLanguage title; spaces and special chars */
+						"details": { /*Details used to generate primary key, sort key titleStandard.*/							
+							"type": [
+								"Dataset"
+							], /*type from DCMI namespace. No other types allowed.*/
+							"languagePrimary": [
+                                "$12"
+                            ], /*master language used to source about, construct primary and sort keys.*/
+							"title": [
+								{
+									"value": [
+										"$30"
+									],
+									"languageVariant": [
+										"$31"
+									],
+									"versions": [
+										"$32"
+									] /*usually fullVersion or shortVersion. can be extended.*/
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	}
+}
