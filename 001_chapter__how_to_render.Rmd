@@ -79,7 +79,12 @@ Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
 Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 </p>
 
+## Techniques to render
 
+simple in out
+R -e "rmarkdown::render('/home/hylmarj/ws/d4m-sck-manpro/chapter_01__original.Rmd', output_file = '/home/hylmarj/ws/d4m-sck-manpro/chapter_01__original.html')"
+
+with parameters
 
 ## Tags and snippets in documentation
 
